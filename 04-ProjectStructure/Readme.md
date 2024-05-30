@@ -39,14 +39,20 @@
 
 ## Naming Conventions
 
-    - camelCase
-        - It is used for variables, functions, file name and properties inside the class.
+- camelCase
+    - It is used for variables, functions, file name and properties inside the class.
 
-    - PascalCase
-        - It i used for component name, class names, types etc.
+- PascalCase
+    - It i used for component name, class names, types etc.
 
-    - snake_case
-        - It is not common in JS but is is heavyly used in python
+- snake_case
+    - It is not common in JS but is is heavyly used in python
 
-    - kebad-case
-        - Tt is common for file names, css-classes, ids etc.
+- kebad-case
+    - Tt is common for file names, css-classes, ids etc.
+
+## Best practices
+
+- Each JSX expression must have one parent element, which means if you try to return multiple elements, React will throw an error.
+
+- Every JSX tag needs to be closed. You should always use closing tag or self-closing tag. You can use self-closing tag for elements that don't have children. e.g., <img src='url' />

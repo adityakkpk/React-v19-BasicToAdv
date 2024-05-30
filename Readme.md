@@ -30,3 +30,4 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * What is JSX.
 * Mechanism behind JSX
 * Bable - The React Compiler
+* started Making Our First Project that is Netflix-Card

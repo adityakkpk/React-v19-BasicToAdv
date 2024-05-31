@@ -38,3 +38,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Two ways to create components.
 * HMR
 * Create Card Component for Project-01.
+
+## Day 7: React Fragments: Remove unwanted Nodes & Speed Up Rendering
+
+* Why we need React Fragments?
+* Why cannot we return multiple elements in React at the same time?

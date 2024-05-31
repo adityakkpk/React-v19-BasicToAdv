@@ -1,6 +1,21 @@
 function App() {
 
   return (
+    <>
+      <NetflixCard />
+      <NetflixCard />
+      <NetflixCard />
+      <NetflixCard />
+      <NetflixCard />
+    </>
+  );
+    
+}
+
+export default App
+
+const NetflixCard = () => {
+  return (
     <div>
       <div>
         <img src="killer.jpg" alt="" width={'40%'} height='40%' />
@@ -12,7 +27,4 @@ function App() {
       </p>
     </div>
   );
-    
 }
-
-export default App

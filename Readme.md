@@ -31,3 +31,10 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Mechanism behind JSX
 * Bable - The React Compiler
 * started Making Our First Project that is Netflix-Card
+
+## Day 6: Comonents in React
+
+* What is Component?
+* Two ways to create components.
+* HMR
+* Create Card Component for Project-01.

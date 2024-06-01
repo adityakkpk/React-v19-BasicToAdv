@@ -43,3 +43,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Why we need React Fragments?
 * Why cannot we return multiple elements in React at the same time?
+
+## Day 8: Dynamic Values in JSX: Injecting JavaScript into HTML
+
+*

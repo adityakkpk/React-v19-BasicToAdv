@@ -46,4 +46,11 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 ## Day 8: Dynamic Values in JSX: Injecting JavaScript into HTML
 
-*
+* Dynamic Values in JSX
+* Key Points
+* Updating Project
+
+## Day 9: Conditional Rendering in JSX
+
+* Conditionals in JSX
+* Methods of Implementing Conditional Rendering

@@ -54,3 +54,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Conditionals in JSX
 * Methods of Implementing Conditional Rendering
+
+## Day 10: React Interview Question
+
+* A React Interview Question
+* Solution

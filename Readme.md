@@ -59,3 +59,12 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * A React Interview Question
 * Solution
+
+## Day 11: React Import and Export Explained 
+
+* Import and Export in React
+    1. Default Export and Import
+    2. Nameed Export and Import
+    3. Mixed Export and Import
+
+* Creating our first component file in React

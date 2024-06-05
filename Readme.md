@@ -68,3 +68,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
     3. Mixed Export and Import
 
 * Creating our first component file in React
+
+##  Looping in JSX
+* How can we use Loop like features in JSX?
+* Implementing Looping in our NetFlixCard Project.

@@ -5,19 +5,14 @@
 // import {NetflixCard, Footer} from "./components/NetflixSerise";
 
 // Mixed Imports
-import NetflixCard, {Footer, Header} from "./components/NetflixSerise";
+// import NetflixCard, {Footer, Header} from "./components/NetflixSerise";
+import NetflixCard from "./components/NetflixSerise"
 
 function App() {
 
   return (
     <>
-      <Header />
       <NetflixCard />
-      <NetflixCard />
-      <NetflixCard />
-      <NetflixCard />
-      <NetflixCard />
-      <Footer />
     </>
   );
     

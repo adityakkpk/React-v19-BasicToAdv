@@ -9,13 +9,7 @@
 import NetflixCard from "./components/NetflixSerise"
 
 function App() {
-
-  return (
-    <>
-      <NetflixCard />
-    </>
-  );
-    
+  return <NetflixCard />
 }
 
 export default App

@@ -69,6 +69,11 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Creating our first component file in React
 
-##  Looping in JSX
+## Day 12: Looping in JSX
 * How can we use Loop like features in JSX?
 * Implementing Looping in our NetFlixCard Project.
+
+## Day 13 - Props in React
+
+* What is Props?
+* Apply this concept in our Project01.

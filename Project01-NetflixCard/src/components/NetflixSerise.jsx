@@ -2,26 +2,13 @@
 // export const NetflixCard = () => {
 
 import serisesData from '../api/SeriseData.json'
+import SeriseList from './List';
 
 const NetflixCard = () => {
 
   return (
     <ul>
-      {serisesData.map((data) => {
-        return <li key={data.id}>
-          <div>
-            <img src={data.img_url} alt="" width={"40%"} height="40%" />
-          </div>
-          <h2>Name: {data.name}</h2>
-          <h3>Rating: {data.rating}</h3>
-          <p>Summary: {data.description}</p>
-          <p>Gener: {data.genre}</p>
-          <p>Cast: {data.cast}</p>
-          <a href={data.watch_url} target='_blank'>
-            <button>Watch Now</button>
-          </a>
-        </li>
-      })}
+      {serisesData.map((data) =>  <SeriseList key={data.id} elem={data} /> )}
     </ul>
   );
 };

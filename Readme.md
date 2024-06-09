@@ -82,3 +82,12 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * What is React Destructuring?
 * Destructuring in Props.
+
+## Day 15 - Errors and Warnings
+
+* Warning Messages Understandin
+* Disabling warnings/errors messages in React
+
+## Day 16 - React Coding Challenge: Passing JSX as Props in React
+
+- 

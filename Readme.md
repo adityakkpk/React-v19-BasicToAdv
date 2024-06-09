@@ -77,3 +77,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * What is Props?
 * Apply this concept in our Project01.
+
+## Day 14 - React Destructuring Props in JSX
+
+* What is React Destructuring?
+* Destructuring in Props.

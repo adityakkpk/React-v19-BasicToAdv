@@ -1,10 +1,9 @@
-import React from 'react'
-
 // const SeriseList = (props) => {
 const SeriseList = ({elem}) => {
   // console.log(props);
   // const { elem } = props;
   // const { id, img_url, name, rating, description, cast, genre, watch_url } = props.elem;
+  // eslint-disable-next-line no-unused-vars
   const { id, img_url, name, rating, description, cast, genre, watch_url } = elem;
   return (
     <li>

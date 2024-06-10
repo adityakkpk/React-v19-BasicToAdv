@@ -7,7 +7,7 @@ import SeriseList from './List';
 const NetflixCard = () => {
 
   return (
-    <ul>
+    <ul className='grid grid-three-cols'>
       {serisesData.map((data) =>  <SeriseList key={data.id} elem={data} /> )}
     </ul>
   );

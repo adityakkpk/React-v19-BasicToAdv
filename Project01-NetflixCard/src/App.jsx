@@ -7,9 +7,13 @@
 // Mixed Imports
 // import NetflixCard, {Footer, Header} from "./components/NetflixSerise";
 import NetflixCard from "./components/NetflixSerise"
+import "./components/Netflix.css"
 
 function App() {
-  return <NetflixCard />
+  return <section className="container">
+    <h1 className="card-heading">Netfilx Series</h1>
+    <NetflixCard />
+  </section> 
 }
 
 export default App

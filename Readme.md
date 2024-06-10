@@ -90,4 +90,10 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 ## Day 16 - React Coding Challenge: Passing JSX as Props in React
 
-- 
+* Challange
+* Solution
+
+## Day 17 - Adding CSS styles in React
+
+* How to add styles to React 
+* Writing styles for styling our components.

@@ -97,3 +97,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * How to add styles to React 
 * Writing styles for styling our components.
+
+## Day 18 - InlineCSS in React
+
+* Solution of Task.
+* InlineCSS in React, rules and working.

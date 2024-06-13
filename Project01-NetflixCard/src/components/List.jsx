@@ -7,12 +7,15 @@ const SeriseList = ({elem}) => {
   const { id, img_url, name, rating, description, cast, genre, watch_url } = elem;
 
   const buttonStyle = {
-    padding: "1.2rem 2.4rem",
+    padding: "0.8em 1.5rem",
     border: "none",
     fontSize: "1rem",
-    backgroundColor: "rgb(26, 26, 245)",
-    color: 'white'
+    backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
+    color: 'white',
+    borderRadius: "5px",
   }
+
+  const ratingClass = rating >= 8.5 ? "super_hit" : "average";
   
   return (
     <li>
@@ -20,7 +23,9 @@ const SeriseList = ({elem}) => {
             <img src={img_url} alt="" width={"40%"} height="40%" />
         </div>
         <h2>Name: {name}</h2>
-        <h3>Rating: {rating}</h3>
+        <h3>
+          Rating: <span className={`rating ${ratingClass}`}>{rating}</span>
+        </h3>
         <p>Summary: {description}</p>
         <p>Gener: {genre}</p>
         <p>Cast: {cast}</p>

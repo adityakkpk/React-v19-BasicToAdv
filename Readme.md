@@ -102,3 +102,9 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Solution of Task.
 * InlineCSS in React, rules and working.
+
+## Day 19 - Conditional Styling for Dynamic UIs in React.j
+
+* Implement Conditional Class names
+* Combining multiple classes
+* Optimizing the conditional classes for performance

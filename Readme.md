@@ -108,3 +108,9 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Implement Conditional Class names
 * Combining multiple classes
 * Optimizing the conditional classes for performance
+
+## Day 20 - CSS Modules in React: Scoped and Reusable Styles 
+
+* What 
+- Implementation
+- Using Bracket Notation for Object property accessing for CSS modules.

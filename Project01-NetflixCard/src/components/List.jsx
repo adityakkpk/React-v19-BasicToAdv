@@ -1,3 +1,5 @@
+import styles from './Netflix.module.css';
+
 // const SeriseList = (props) => {
 const SeriseList = ({elem}) => {
   // console.log(props);
@@ -11,20 +13,20 @@ const SeriseList = ({elem}) => {
     border: "none",
     fontSize: "1rem",
     backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
-    color: 'white',
+    color: 'black',
     borderRadius: "5px",
   }
 
-  const ratingClass = rating >= 8.5 ? "super_hit" : "average";
+  const ratingClass = rating >= 8.5 ? styles.super_hit : styles.average;
   
   return (
     <li>
         <div>
             <img src={img_url} alt="" width={"40%"} height="40%" />
         </div>
-        <h2>Name: {name}</h2>
+        <h2 className={styles['card-heading']}>Name: {name}</h2>
         <h3>
-          Rating: <span className={`rating ${ratingClass}`}>{rating}</span>
+          Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span>
         </h3>
         <p>Summary: {description}</p>
         <p>Gener: {genre}</p>

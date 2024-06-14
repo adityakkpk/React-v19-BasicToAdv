@@ -114,3 +114,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * What 
 - Implementation
 - Using Bracket Notation for Object property accessing for CSS modules.
+
+## day 21 - Styled Components in React JS for Clean and Dynamic UI
+
+* Installation of Styled-Components
+* Using Styled-Components in our project

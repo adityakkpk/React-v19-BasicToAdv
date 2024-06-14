@@ -1,4 +1,5 @@
 import styles from './Netflix.module.css';
+import styled from 'styled-components'
 
 // const SeriseList = (props) => {
 const SeriseList = ({elem}) => {
@@ -8,14 +9,20 @@ const SeriseList = ({elem}) => {
   // eslint-disable-next-line no-unused-vars
   const { id, img_url, name, rating, description, cast, genre, watch_url } = elem;
 
-  const buttonStyle = {
-    padding: "0.8em 1.5rem",
+  // const buttonStyle = {}
+  const ButtonStyle = styled.button({
+    padding: "0.8rem 1.5rem",
     border: "none",
     fontSize: "1rem",
     backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
     color: 'black',
     borderRadius: "5px",
-  }
+  });
+  const Rating = styled.h3`
+    font-size: 1rem;
+    color: #7dcea0;
+    text-transform: capitalize;
+  `;
 
   const ratingClass = rating >= 8.5 ? styles.super_hit : styles.average;
   
@@ -25,14 +32,15 @@ const SeriseList = ({elem}) => {
             <img src={img_url} alt="" width={"40%"} height="40%" />
         </div>
         <h2 className={styles['card-heading']}>Name: {name}</h2>
-        <h3>
+        <Rating>
           Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span>
-        </h3>
+        </Rating>
         <p>Summary: {description}</p>
         <p>Gener: {genre}</p>
         <p>Cast: {cast}</p>
         <a href={watch_url} target='_blank'>
-          <button style={buttonStyle}>Watch Now</button>
+          {/* <button style={buttonStyle}>Watch Now</button> */}
+          <ButtonStyle>Watch Now</ButtonStyle>
         </a>
     </li>
   )

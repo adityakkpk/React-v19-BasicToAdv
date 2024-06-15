@@ -35,8 +35,8 @@ const SeriseList = ({elem}) => {
         <Rating>
           Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span>
         </Rating>
-        <p>Summary: {description}</p>
-        <p>Gener: {genre}</p>
+        <p className='text-xl font-bold underline'>Summary: {description}</p>
+        <p className='text-sky-700'>Gener: {genre}</p>
         <p>Cast: {cast}</p>
         <a href={watch_url} target='_blank'>
           {/* <button style={buttonStyle}>Watch Now</button> */}

@@ -119,3 +119,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Installation of Styled-Components
 * Using Styled-Components in our project
+
+## Day 22 - Tailwind CSS in React v19
+
+* Installation and configuration.
+* Usages of Tailwind CSS in our project

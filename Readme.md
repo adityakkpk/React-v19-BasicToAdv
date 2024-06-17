@@ -124,3 +124,9 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Installation and configuration.
 * Usages of Tailwind CSS in our project
+
+## Day 23 - Event Handling in React
+
+* Understanding Event Handling
+* What is Synthetic Base Event?
+* Implementation.

@@ -9,11 +9,13 @@
 import NetflixCard from "./components/NetflixSerise"
 // import "./components/Netflix.css"
 import "./components/Netflix.module.css"
+import { EventHandling } from "./components/EventHandling"
 
 function App() {
   return <section className="container">
-    <h1 className="card-heading">Netfilx Series</h1>
-    <NetflixCard />
+    {/* <h1 className="card-heading">Netfilx Series</h1>
+    <NetflixCard /> */}
+    <EventHandling />
   </section> 
 }
 

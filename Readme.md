@@ -130,3 +130,9 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Understanding Event Handling
 * What is Synthetic Base Event?
 * Implementation.
+
+## Day 24 - Event Propagation
+
+* What is Event Propagation
+* Capturing Phase and bubbling phase
+* Uses

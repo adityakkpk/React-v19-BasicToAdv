@@ -25,7 +25,15 @@ function App() {
     {/* <EventPropagation /> */}
     {/* <EventProps /> */}
     <State />
+    <Sibling />
   </section> 
 }
 
 export default App
+
+//-----------Day27-----------------------
+// This component will not re-render if the state inside the <State /> component will change.
+function Sibling() {
+  console.log("Sibling Component Render");
+  return <div>Child Component</div>
+}

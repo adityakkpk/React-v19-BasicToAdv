@@ -147,3 +147,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * What?
 * Why?
 * Usages
+
+## Day 27 - How React State Works (BTS)
+
+* How State works?
+* How re-rendering works?

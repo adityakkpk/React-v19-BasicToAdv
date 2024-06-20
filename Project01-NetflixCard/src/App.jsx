@@ -8,10 +8,14 @@
 // import NetflixCard, {Footer, Header} from "./components/NetflixSerise";
 import NetflixCard from "./components/NetflixSerise"
 // import "./components/Netflix.css"
-import "./components/Netflix.module.css"
+// import "./components/Netflix.module.css"
 import { EventHandling } from "./components/EventHandling"
 import { EventPropagation } from "./components/Eventpropagation"
 import EventProps from "./components/EventProps"
+
+
+import './components/EV.css'
+import { State } from "./components/hooks/State.jsx"
 
 function App() {
   return <section className="container">
@@ -19,7 +23,8 @@ function App() {
     <NetflixCard /> */}
     {/* <EventHandling /> */}
     {/* <EventPropagation /> */}
-    <EventProps />
+    {/* <EventProps /> */}
+    <State />
   </section> 
 }
 

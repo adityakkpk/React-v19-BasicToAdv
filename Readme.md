@@ -142,4 +142,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Capturing Phase and bubbling phase
 * Uses
 
-## Day 26 - 
+## Day 26 - React States: What is useState Hook & Why we need it in React
+
+* What?
+* Why?
+* Usages

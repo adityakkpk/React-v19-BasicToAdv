@@ -131,8 +131,15 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * What is Synthetic Base Event?
 * Implementation.
 
-## Day 24 - Event Propagation
+## Day 24 - Passing Events as Props in React
+
+* Why?
+* How?
+
+## Day 25 - Event Propagation
 
 * What is Event Propagation
 * Capturing Phase and bubbling phase
 * Uses
+
+## Day 26 - 

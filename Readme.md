@@ -152,3 +152,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * How State works?
 * How re-rendering works?
+
+## Day 28 - Problem/Doubt with State.
+
+* Understanding the Problem.
+* Reason behind the problem.

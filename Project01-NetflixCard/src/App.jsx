@@ -16,6 +16,7 @@ import EventProps from "./components/EventProps"
 
 import './components/EV.css'
 import { State } from "./components/hooks/State.jsx"
+import { DerrivedState } from "./components/DeriveState.jsx"
 
 function App() {
   return <section className="container">
@@ -24,8 +25,11 @@ function App() {
     {/* <EventHandling /> */}
     {/* <EventPropagation /> */}
     {/* <EventProps /> */}
-    <State />
-    <Sibling />
+    {/* <State />
+    <Sibling /> */}
+
+    {/*React useState challange */}
+    <DerrivedState />
   </section> 
 }
 
@@ -33,7 +37,7 @@ export default App
 
 //-----------Day27-----------------------
 // This component will not re-render if the state inside the <State /> component will change.
-function Sibling() {
-  console.log("Sibling Component Render");
-  return <div>Child Component</div>
-}
+// function Sibling() {
+//   console.log("Sibling Component Render");
+//   return <div>Child Component</div>
+// }

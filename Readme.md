@@ -158,5 +158,10 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Understanding the Problem.
 * Reason behind the problem.
 
-## Day 30 - React useState Practice/challange.
+## Day 29 - React useState Practice/challange.
 
+## Day 30 - Derived State in React
+
+* Derived State
+* Benifits of Derived State.
+* Example

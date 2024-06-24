@@ -26,6 +26,13 @@ export const DerrivedState = () => {
         { name: 'Lisa', age: '42' },
     ])
 
+
+    //------------Derived State---------------
+    // Because here values are derived from the state
+    const usersCount = users.length;
+
+    const averageAge = users.reduce((acc, curElem) => acc + Number(curElem.age), 0) / usersCount;
+
     return (
         <div className="main-div">
             <h1>User List</h1>
@@ -34,6 +41,8 @@ export const DerrivedState = () => {
                     return <li key={index}>{user.name} - {user.age} year old</li>
                 })}
             </ul>
+            <p>Total Users: {usersCount}</p>
+            <p>Average Age: {averageAge}</p>
         </div>
     )
 }

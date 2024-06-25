@@ -165,3 +165,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Derived State
 * Benifits of Derived State.
 * Example
+
+# Day 31 - Lifting the State up in React
+
+* Understand the State Lifting
+* Use Cases

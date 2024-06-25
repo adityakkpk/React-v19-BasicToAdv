@@ -17,6 +17,7 @@ import EventProps from "./components/EventProps"
 import './components/EV.css'
 import { State } from "./components/hooks/State.jsx"
 import { DerrivedState } from "./components/DeriveState.jsx"
+import LiftStateUp from "./components/LiftStateUp.jsx"
 
 function App() {
   return <section className="container">
@@ -29,7 +30,8 @@ function App() {
     <Sibling /> */}
 
     {/*React useState challange */}
-    <DerrivedState />
+    {/* <DerrivedState /> */}
+    <LiftStateUp />
   </section> 
 }
 

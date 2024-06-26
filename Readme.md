@@ -173,3 +173,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 # Day 32 - Toggle Switch Mini Project
 
+## Day 33 - React Icons
+
+* Installation 
+* usages

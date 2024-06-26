@@ -18,6 +18,7 @@ import './components/EV.css'
 import { State } from "./components/hooks/State.jsx"
 import { DerrivedState } from "./components/DeriveState.jsx"
 import LiftStateUp from "./components/LiftStateUp.jsx"
+import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch.jsx"
 
 function App() {
   return <section className="container">
@@ -31,7 +32,8 @@ function App() {
 
     {/*React useState challange */}
     {/* <DerrivedState /> */}
-    <LiftStateUp />
+    {/* <LiftStateUp /> */}
+    <ToggleSwitch />
   </section> 
 }
 

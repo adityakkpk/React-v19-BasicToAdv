@@ -170,3 +170,6 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Understand the State Lifting
 * Use Cases
+
+# Day 32 - Toggle Switch Mini Project
+

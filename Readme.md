@@ -177,3 +177,10 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Installation 
 * usages
+
+## Day 34 -  React Project - Build a Complete Todo App from Scratch with Advanced Features
+
+- Creating a simple todo app in React with best practices
+    - Setup
+    - create Todo component
+    - create TodoForm component

@@ -19,9 +19,10 @@ import { State } from "./components/hooks/State.jsx"
 import { DerrivedState } from "./components/DeriveState.jsx"
 import LiftStateUp from "./components/LiftStateUp.jsx"
 import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch.jsx"
+import Todo from "./projects/Todo/Todo.jsx"
 
 function App() {
-  return <section className="container">
+  return <section className="bg-slate-800 h-full w-[100vw]">
     {/* <h1 className="card-heading">Netfilx Series</h1>
     <NetflixCard /> */}
     {/* <EventHandling /> */}
@@ -33,7 +34,8 @@ function App() {
     {/*React useState challange */}
     {/* <DerrivedState /> */}
     {/* <LiftStateUp /> */}
-    <ToggleSwitch />
+    {/* <ToggleSwitch /> */}
+    <Todo />
   </section> 
 }
 

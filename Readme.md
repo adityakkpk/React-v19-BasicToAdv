@@ -184,3 +184,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
     - Setup
     - create Todo component
     - create TodoForm component
+
+## Day 35 - Spred Operator in React.js
+
+- Why
+- How

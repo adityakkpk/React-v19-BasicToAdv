@@ -36,8 +36,8 @@ function App() {
     {/* <DerrivedState /> */}
     {/* <LiftStateUp /> */}
     {/* <ToggleSwitch /> */}
-    {/* <Todo /> */}
-    <Help />
+    {/* <Help /> */}
+    <Todo />
   </section> 
 }
 

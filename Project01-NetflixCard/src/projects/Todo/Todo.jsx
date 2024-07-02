@@ -14,7 +14,10 @@ function Todo() {
     setTodos((prev) => [...prev, inputValue]);
   };
 
-  
+  const handleDelete = (val) => {
+    const updatedTodos = todos.filter((todo) => todo !== val);
+    setTodos(updatedTodos);
+  }
 
   return (
     <section className="w-full flex flex-col justify-center">
@@ -26,10 +29,15 @@ function Todo() {
       <section className="flex justify-center my-6">
         <ul>
             {todos.map((todo, index) => (
-                <TodoList key={index} data={todo} />
+                <TodoList key={index} data={todo} handleTodoDelete={handleDelete} />
             ))}
         </ul>
       </section>
+      {todos.length > 0 && <section className="flex justify-center my-6">
+        <button onClick={() => setTodos([])} className="text-white bg-red-400 px-4 py-1 rounded-sm text-lg">
+          Clear All
+        </button>
+      </section>}
     </section>
   );
 }

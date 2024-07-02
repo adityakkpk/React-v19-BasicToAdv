@@ -1,7 +1,7 @@
 import {MdCheck, MdDeleteForever} from 'react-icons/md';
 import React from "react";
 
-const TodoList = ({data}) => {
+const TodoList = ({data, handleTodoDelete}) => {
   return (
     <li
       className="h-10 my-4 bg-white flex items-center text-lg px-4 rounded-lg"
@@ -10,7 +10,7 @@ const TodoList = ({data}) => {
       <button className="border mx-2 p-2 rounded bg-slate-300">
         <MdCheck className="text-green-600" />
       </button>
-      <button className="border mx-2 p-2 rounded bg-slate-300">
+      <button className="border mx-2 p-2 rounded bg-slate-300" onClick={() => handleTodoDelete(data)}>
         <MdDeleteForever className="text-red-600" />
       </button>
     </li>

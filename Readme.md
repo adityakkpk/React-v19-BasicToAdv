@@ -191,3 +191,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 - How
 
 ## Day 36 - Adding Clock in our todo Application
+
+## Day 37 - Delete and Clear all functionality added to the Todo Application
+
+## Day 38 - Creating Components to cleanup the code.

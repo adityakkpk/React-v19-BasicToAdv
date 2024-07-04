@@ -7,15 +7,33 @@ function Todo() {
   const [todos, setTodos] = useState([]);
 
   const handleFormSubmit = (inputValue) => {
-    if (!inputValue) return;
-    
-    if (todos.includes(inputValue)) return;
+    const { id, content, checked } = inputValue;
+    if (!content) return;
 
-    setTodos((prev) => [...prev, inputValue]);
+    // if (todos.includes(content)) return;
+    const ifTodoAlreadyPresent = todos.find((todo) => todo.content === content);
+    if (ifTodoAlreadyPresent) {
+      alert("Todo already exists!");
+      return;
+    }
+
+    setTodos((prev) => [...prev, { id, content, checked }]);
   };
 
   const handleDelete = (val) => {
-    const updatedTodos = todos.filter((todo) => todo !== val);
+    const updatedTodos = todos.filter((todo) => todo.content !== val);
+    setTodos(updatedTodos);
+  };
+
+  const handleChecked = (val) => {
+    const updatedTodos = todos.map((todo) => {
+      if(todo.content === val) {
+        return {...todo, checked: !todo.checked};
+      } else {
+        return todo;
+      }
+    });
+
     setTodos(updatedTodos);
   }
 
@@ -28,16 +46,27 @@ function Todo() {
       <TodoForm onAddTodo={handleFormSubmit} />
       <section className="flex justify-center my-6">
         <ul>
-            {todos.map((todo, index) => (
-                <TodoList key={index} data={todo} handleTodoDelete={handleDelete} />
-            ))}
+          {todos.map((todo) => (
+            <TodoList
+              key={todo.id}
+              data={todo.content}
+              handleTodoDelete={handleDelete}
+              handleCheckedTodo={handleChecked}
+              checked={todo.checked}
+            />
+          ))}
         </ul>
       </section>
-      {todos.length > 0 && <section className="flex justify-center my-6">
-        <button onClick={() => setTodos([])} className="text-white bg-red-400 px-4 py-1 rounded-sm text-lg">
-          Clear All
-        </button>
-      </section>}
+      {todos.length > 0 && (
+        <section className="flex justify-center my-6">
+          <button
+            onClick={() => setTodos([])}
+            className="text-white bg-red-400 px-4 py-1 rounded-sm text-lg"
+          >
+            Clear All
+          </button>
+        </section>
+      )}
     </section>
   );
 }

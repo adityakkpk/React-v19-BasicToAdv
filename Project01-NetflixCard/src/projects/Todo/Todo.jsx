@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import DateTime from "./DateTime";
+import { getTodosFromLocalStorage, saveTodosToLocalStorage } from "./TodoLocal";
 
 function Todo() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => getTodosFromLocalStorage());
+
+  useEffect(() => {
+    saveTodosToLocalStorage(todos);
+  }, [todos]);
 
   const handleFormSubmit = (inputValue) => {
     const { id, content, checked } = inputValue;

@@ -21,6 +21,7 @@ import LiftStateUp from "./components/LiftStateUp.jsx"
 import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch.jsx"
 import Todo from "./projects/Todo/Todo.jsx"
 import Help from "./projects/Todo/Help.jsx"
+import ShortCircuit from "./components/ShortCircuit.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw]">
@@ -37,7 +38,8 @@ function App() {
     {/* <LiftStateUp /> */}
     {/* <ToggleSwitch /> */}
     {/* <Help /> */}
-    <Todo />
+    {/* <Todo /> */}
+    <ShortCircuit />
   </section> 
 }
 

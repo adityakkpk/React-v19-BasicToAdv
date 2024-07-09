@@ -201,3 +201,5 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 ## Day 40 - Storing Todos to local storage
 
 ## Day 41 - Why Keys Are Important in React JS? 
+
+## Day 42 - Short Circuit Evaluation in React.js.

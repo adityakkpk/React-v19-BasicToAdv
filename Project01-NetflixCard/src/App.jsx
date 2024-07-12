@@ -23,6 +23,7 @@ import Todo from "./projects/Todo/Todo.jsx"
 import Help from "./projects/Todo/Help.jsx"
 import ShortCircuit from "./components/ShortCircuit.jsx"
 import Counter from "./components/hooks/useState/Index.jsx"
+import Challange from "./components/hooks/useState/Challange.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw]">
@@ -42,7 +43,8 @@ function App() {
     {/* <Todo /> */}
     {/* <ShortCircuit /> */}
 
-    <Counter />
+    {/* <Counter /> */}
+    <Challange />
   </section> 
 }
 

@@ -209,3 +209,5 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 ## Day 44 - How to use useState() hook
 
 ## Day 45 - useState Hook Chalange
+
+## Day 46 - React controllerd vs uncontrolled comopnents

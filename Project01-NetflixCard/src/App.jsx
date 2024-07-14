@@ -24,6 +24,7 @@ import Help from "./projects/Todo/Help.jsx"
 import ShortCircuit from "./components/ShortCircuit.jsx"
 import Counter from "./components/hooks/useState/Index.jsx"
 import Challange from "./components/hooks/useState/Challange.jsx"
+import Registration from "./components/hooks/useState/Registration.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw]">
@@ -44,7 +45,10 @@ function App() {
     {/* <ShortCircuit /> */}
 
     {/* <Counter /> */}
-    <Challange />
+
+    {/* <Challange />  */}
+
+    <Registration />
   </section> 
 }
 

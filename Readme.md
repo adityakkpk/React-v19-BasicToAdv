@@ -1,6 +1,6 @@
 # React.js
 
-Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtube channel.
+Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtube channel.
 
 ## Day 1: Introduction to React.js
 
@@ -17,7 +17,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 ## Day 3: What to Learn Before React
 
-* Prerequisite to lern React.
+* Prerequisite to learn React.
 * Tips to learn React.
 
 ## Day 4: React Project Structure and Naming Conventions
@@ -29,10 +29,10 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * What is JSX.
 * Mechanism behind JSX
-* Bable - The React Compiler
+* Babel - The React Compiler
 * started Making Our First Project that is Netflix-Card
 
-## Day 6: Comonents in React
+## Day 6: Components in React
 
 * What is Component?
 * Two ways to create components.
@@ -64,7 +64,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 * Import and Export in React
     1. Default Export and Import
-    2. Nameed Export and Import
+    2. Named Export and Import
     3. Mixed Export and Import
 
 * Creating our first component file in React
@@ -85,7 +85,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 ## Day 15 - Errors and Warnings
 
-* Warning Messages Understandin
+* Warning Messages Understanding
 * Disabling warnings/errors messages in React
 
 ## Day 16 - React Coding Challenge: Passing JSX as Props in React
@@ -158,12 +158,12 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 * Understanding the Problem.
 * Reason behind the problem.
 
-## Day 29 - React useState Practice/challange.
+## Day 29 - React useState Practice/challenge.
 
 ## Day 30 - Derived State in React
 
 * Derived State
-* Benifits of Derived State.
+* Benefits of Derived State.
 * Example
 
 # Day 31 - Lifting the State up in React
@@ -185,7 +185,7 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
     - create Todo component
     - create TodoForm component
 
-## Day 35 - Spred Operator in React.js
+## Day 35 - Spread Operator in React.js
 
 - Why
 - How
@@ -208,6 +208,8 @@ Started Learning Reactjs v19 from bassic to advance from `Thapa Technical` youtu
 
 ## Day 44 - How to use useState() hook
 
-## Day 45 - useState Hook Chalange
+## Day 45 - useState Hook Challenge
 
-## Day 46 - React controllerd vs uncontrolled comopnents
+## Day 46 - React controlled vs uncontrolled components
+
+## Day 47 - Registration Form in React

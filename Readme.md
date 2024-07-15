@@ -213,3 +213,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 46 - React controlled vs uncontrolled components
 
 ## Day 47 - Registration Form in React
+
+## Day 48 - Registration Form handling (The right way)

@@ -26,6 +26,7 @@ import Counter from "./components/hooks/useState/Index.jsx"
 import Challange from "./components/hooks/useState/Challange.jsx"
 import Registration from "./components/hooks/useState/Registration.jsx"
 import RegisterReact from "./components/hooks/useState/RegisterReact.jsx"
+import LoginForm from "./components/hooks/useState/LoginForm.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw]">
@@ -50,7 +51,8 @@ function App() {
     {/* <Challange />  */}
 
     {/* <Registration /> */}
-    <RegisterReact />
+    {/* <RegisterReact /> */}
+    <LoginForm />
   </section> 
 }
 

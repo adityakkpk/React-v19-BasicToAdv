@@ -28,9 +28,10 @@ import Registration from "./components/hooks/useState/Registration.jsx"
 import RegisterReact from "./components/hooks/useState/RegisterReact.jsx"
 import LoginForm from "./components/hooks/useState/LoginForm.jsx"
 import ContactForm from "./components/hooks/useState/ContactForm.jsx"
+import ReactUseEffect from "./components/hooks/useEffect/Index.jsx"
 
 function App() {
-  return <section className="bg-slate-800 h-full w-[100vw]">
+  return <section className="bg-slate-800 h-full w-[100vw] text-white">
     {/* <h1 className="card-heading">Netfilx Series</h1>
     <NetflixCard /> */}
     {/* <EventHandling /> */}
@@ -54,7 +55,9 @@ function App() {
     {/* <Registration /> */}
     {/* <RegisterReact /> */}
     {/* <LoginForm /> */}
-    <ContactForm />
+    {/* <ContactForm /> */}
+
+    <ReactUseEffect/>
   </section> 
 }
 

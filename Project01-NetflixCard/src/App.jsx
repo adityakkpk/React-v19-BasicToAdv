@@ -29,6 +29,7 @@ import RegisterReact from "./components/hooks/useState/RegisterReact.jsx"
 import LoginForm from "./components/hooks/useState/LoginForm.jsx"
 import ContactForm from "./components/hooks/useState/ContactForm.jsx"
 import ReactUseEffect from "./components/hooks/useEffect/Index.jsx"
+import Challenge from "./components/hooks/useEffect/Challange.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw] text-white">
@@ -57,7 +58,7 @@ function App() {
     {/* <LoginForm /> */}
     {/* <ContactForm /> */}
 
-    <ReactUseEffect/>
+    <Challenge/>
   </section> 
 }
 

@@ -30,6 +30,7 @@ import LoginForm from "./components/hooks/useState/LoginForm.jsx"
 import ContactForm from "./components/hooks/useState/ContactForm.jsx"
 import ReactUseEffect from "./components/hooks/useEffect/Index.jsx"
 import Challenge from "./components/hooks/useEffect/Challange.jsx"
+import CleanUp from "./components/hooks/useEffect/CleanUp.jsx"
 
 function App() {
   return <section className="bg-slate-800 h-full w-[100vw] text-white">
@@ -58,7 +59,8 @@ function App() {
     {/* <LoginForm /> */}
     {/* <ContactForm /> */}
 
-    <Challenge/>
+    {/* <Challenge/> */}
+    <CleanUp />
   </section> 
 }
 

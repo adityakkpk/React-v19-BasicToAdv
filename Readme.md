@@ -225,3 +225,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 52 - React useEffect challenge
 
 ## Day 53 - UseEffect cleanup function
+
+## Day 54 - How NOT to Fetch API Data in React: Avoid Infinite Requests

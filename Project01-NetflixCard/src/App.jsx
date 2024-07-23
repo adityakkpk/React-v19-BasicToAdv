@@ -31,9 +31,10 @@ import ContactForm from "./components/hooks/useState/ContactForm.jsx"
 import ReactUseEffect from "./components/hooks/useEffect/Index.jsx"
 import Challenge from "./components/hooks/useEffect/Challange.jsx"
 import CleanUp from "./components/hooks/useEffect/CleanUp.jsx"
+import HowNotToFetchApi from "./components/hooks/useEffect/HowNotToFetchApi.jsx"
 
 function App() {
-  return <section className="bg-slate-800 h-full w-[100vw] text-white">
+  return <section className="bg-slate-800 w-[100vw] text-white">
     {/* <h1 className="card-heading">Netfilx Series</h1>
     <NetflixCard /> */}
     {/* <EventHandling /> */}
@@ -60,7 +61,9 @@ function App() {
     {/* <ContactForm /> */}
 
     {/* <Challenge/> */}
-    <CleanUp />
+    {/* <CleanUp /> */}
+
+    <HowNotToFetchApi />
   </section> 
 }
 

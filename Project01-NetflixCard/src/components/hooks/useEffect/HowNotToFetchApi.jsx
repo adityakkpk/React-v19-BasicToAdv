@@ -6,18 +6,31 @@ const HowNotToFetchApi = () => {
     const [errorState, setErrorState] = useState(null);
     const API = 'https://pokeapi.co/api/v2/pokemon/pikachu';
 
-    const fetchPokemon = () => {
-        fetch(API)
-            .then((res) => res.json())
-            .then((data) => {
-                setData(data)
-                setLoadingState(false);
-            })
-            .catch((err) => {
-                console.log(err)
-                setErrorState(err); 
-                setLoadingState(false);
-            });
+    // const fetchPokemon = () => {
+        // fetch(API)
+        //     .then((res) => res.json())
+        //     .then((data) => {
+        //         setData(data)
+        //         setLoadingState(false);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err)
+        //         setErrorState(err); 
+        //         setLoadingState(false);
+        //     });
+    // }
+
+    const fetchPokemon = async () => {
+        try {
+            const res = await fetch(API);
+            const data = await res.json();
+            setData(data);
+            setLoadingState(false)
+        } catch (error) {
+            console.log(err)
+            setErrorState(err); 
+            setLoadingState(false);
+        }
     }
 
     useEffect(() => {

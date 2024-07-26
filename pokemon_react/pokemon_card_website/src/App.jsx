@@ -1,12 +1,10 @@
 import { useState } from 'react'
+import Pokemon from './Pokemon'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className='bg-red-500'>Lets Catch pokemon</h1>
-    </>
+    <Pokemon />
   )
 }
 

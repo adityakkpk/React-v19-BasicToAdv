@@ -32,6 +32,7 @@ import ReactUseEffect from "./components/hooks/useEffect/Index.jsx"
 import Challenge from "./components/hooks/useEffect/Challange.jsx"
 import CleanUp from "./components/hooks/useEffect/CleanUp.jsx"
 import HowNotToFetchApi from "./components/hooks/useEffect/HowNotToFetchApi.jsx"
+import { UseRef } from "./components/hooks/useRef/Index.jsx"
 
 function App() {
   return <section className="bg-slate-800 w-[100vw] text-white">
@@ -63,7 +64,9 @@ function App() {
     {/* <Challenge/> */}
     {/* <CleanUp /> */}
 
-    <HowNotToFetchApi />
+    {/* <HowNotToFetchApi /> */}
+
+    <UseRef />
   </section> 
 }
 

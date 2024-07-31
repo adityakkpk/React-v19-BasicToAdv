@@ -33,6 +33,7 @@ import Challenge from "./components/hooks/useEffect/Challange.jsx"
 import CleanUp from "./components/hooks/useEffect/CleanUp.jsx"
 import HowNotToFetchApi from "./components/hooks/useEffect/HowNotToFetchApi.jsx"
 import { UseRef } from "./components/hooks/useRef/Index.jsx"
+import UseId from "./components/hooks/useId/Index.jsx"
 import ForwardRef from "./components/hooks/useRef/ForwardRef.jsx"
 
 function App() {
@@ -68,7 +69,11 @@ function App() {
     {/* <HowNotToFetchApi /> */}
 
     {/* <UseRef /> */}
-    <ForwardRef />
+    {/* <ForwardRef /> */}
+
+    <UseId />
+
+    
   </section> 
 }
 

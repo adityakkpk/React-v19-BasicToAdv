@@ -33,6 +33,7 @@ import Challenge from "./components/hooks/useEffect/Challange.jsx"
 import CleanUp from "./components/hooks/useEffect/CleanUp.jsx"
 import HowNotToFetchApi from "./components/hooks/useEffect/HowNotToFetchApi.jsx"
 import { UseRef } from "./components/hooks/useRef/Index.jsx"
+import ForwardRef from "./components/hooks/useRef/ForwardRef.jsx"
 
 function App() {
   return <section className="bg-slate-800 w-[100vw] text-white">
@@ -66,7 +67,8 @@ function App() {
 
     {/* <HowNotToFetchApi /> */}
 
-    <UseRef />
+    {/* <UseRef /> */}
+    <ForwardRef />
   </section> 
 }
 

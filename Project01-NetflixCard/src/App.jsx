@@ -35,6 +35,7 @@ import HowNotToFetchApi from "./components/hooks/useEffect/HowNotToFetchApi.jsx"
 import { UseRef } from "./components/hooks/useRef/Index.jsx"
 import UseId from "./components/hooks/useId/Index.jsx"
 import ForwardRef from "./components/hooks/useRef/ForwardRef.jsx"
+import PropDrilling from "./components/PropDrilling.jsx"
 
 function App() {
   return <section className="bg-slate-800 w-[100vw] text-white">
@@ -71,7 +72,9 @@ function App() {
     {/* <UseRef /> */}
     {/* <ForwardRef /> */}
 
-    <UseId />
+    {/* <UseId /> */}
+
+    <PropDrilling />
 
     
   </section> 

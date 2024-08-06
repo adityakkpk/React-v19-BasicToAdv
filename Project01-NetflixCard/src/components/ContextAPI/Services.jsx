@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { MyContext } from "./Index";
+import { useMyCustomHook } from "./CustomHooks/Index";
 
 const Services = () => {
-  const {name, age} = useContext(MyContext);
+  const {name, age} = useMyCustomHook();
 
 
   return (

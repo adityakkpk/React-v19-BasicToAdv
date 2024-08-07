@@ -1,10 +1,10 @@
-import { useContext } from 'react'
+import { useContext, use } from 'react'
 import { MyContext } from '../Index';
 
 export const useMyCustomHook = () => {
-    const context = useContext(MyContext);
+    const context = use(MyContext);
     if(context === undefined) {
-        throw new Error("Component must be wraqpped within the contextProvider.")
+        throw new Error("Component must be wrapped within the contextProvider.")
     }
     return context;
 }

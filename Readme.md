@@ -249,3 +249,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 64 - Custom Hooks in React
 
 ## Day 65 - New "use" Hook in React 19
+
+## Day 66 - useReducer Hook in React19

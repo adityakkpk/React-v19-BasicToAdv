@@ -4,6 +4,7 @@ import DarkLight, {
 import Home from "./components/ContextAPI/Home.jsx";
 import { MyContextProvider } from "./components/ContextAPI/Index.jsx";
 import Services from "./components/ContextAPI/Services.jsx";
+import ReducerComp from "./components/hooks/useReducer/Index.jsx";
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
         <Home />
       <Services />
       </MyContextProvider> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <DarkLight />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <ReducerComp />
     </section>
   );
 }

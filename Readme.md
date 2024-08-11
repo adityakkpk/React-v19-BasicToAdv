@@ -251,3 +251,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 65 - New "use" Hook in React 19
 
 ## Day 66 - useReducer Hook in React19
+
+## Day 67 - Best Practices for Using the useReducer Hook in React 19: Optimize Your State Management

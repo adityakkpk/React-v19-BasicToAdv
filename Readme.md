@@ -255,3 +255,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 67 - Best Practices for Using the useReducer Hook in React 19: Optimize Your State Management
 
 ## Day 68 - React.memo(): prevent unnecessary Re-renders with React Memo
+
+## Day 69 - useMemo Hook in React 19

@@ -4,6 +4,7 @@ import DarkLight, {
 import Home from "./components/ContextAPI/Home.jsx";
 import { MyContextProvider } from "./components/ContextAPI/Index.jsx";
 import Services from "./components/ContextAPI/Services.jsx";
+import ReactMemo from "./components/hooks/Memo/MemoFunction/Reactmemo.jsx";
 import ReducerComp from "./components/hooks/useReducer/Index.jsx";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         <DarkLight />
       </ThemeProvider> */}
 
-      <ReducerComp />
+      {/* <ReducerComp /> */}
+
+      <ReactMemo />
     </section>
   );
 }

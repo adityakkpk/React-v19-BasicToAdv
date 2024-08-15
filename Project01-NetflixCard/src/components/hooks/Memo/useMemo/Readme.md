@@ -8,4 +8,16 @@
 
 * Useful for optimizing performance in situations where calculations or operations are computationally expensive.
 
-* Overusing useMemo might lead to unnecessary complexibility and impact readability.
+* Overusing useMemo might lead to unnecessary complexity and impact readability.
+
+
+### Syntax
+
+```javascript
+const memoizedValue = useMemo(() => {
+    // Your computational logic here
+
+    return computedValue;
+}, [dependencies]);
+
+```

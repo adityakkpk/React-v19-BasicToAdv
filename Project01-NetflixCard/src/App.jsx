@@ -5,6 +5,7 @@ import Home from "./components/ContextAPI/Home.jsx";
 import { MyContextProvider } from "./components/ContextAPI/Index.jsx";
 import Services from "./components/ContextAPI/Services.jsx";
 import ReactMemo from "./components/hooks/Memo/MemoFunction/Reactmemo.jsx";
+import MemoParentComp from "./components/hooks/Memo/useMemo/Index.jsx";
 import ReducerComp from "./components/hooks/useReducer/Index.jsx";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
 
       {/* <ReducerComp /> */}
 
-      <ReactMemo />
+      {/* <ReactMemo /> */}
+      <MemoParentComp />
     </section>
   );
 }

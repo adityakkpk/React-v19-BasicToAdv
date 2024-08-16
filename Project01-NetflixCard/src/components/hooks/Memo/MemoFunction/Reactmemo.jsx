@@ -1,12 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 
 const ReactMemo = () => {
   const [count, setCount] = useState(0);
 
-  const myData = {
-    name: "Aditya",
-    age: 30,
-  };
+  const myData = useMemo(() => {
+    return {
+      name: "Aditya",
+      age: 30,
+    };
+  }, [])
 
   return (
     <div className="p-4 h-52 tracking-wider flex flex-col justify-end items-center gap-5">

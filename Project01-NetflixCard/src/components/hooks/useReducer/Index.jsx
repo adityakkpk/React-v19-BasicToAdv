@@ -29,7 +29,7 @@ const ReducerComp = () => {
       case "Decrement":
         return {count: state.count - 1}
 
-      case "INCREMENT":
+      case "RESET":
         return {count: 0}
 
       default:

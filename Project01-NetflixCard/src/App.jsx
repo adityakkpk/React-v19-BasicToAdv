@@ -21,8 +21,8 @@ function App() {
 
       {/* <ReducerComp /> */}
 
-      {/* <ReactMemo /> */}
-      <MemoParentComp />
+      <ReactMemo />
+      {/* <MemoParentComp /> */}
     </section>
   );
 }

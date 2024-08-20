@@ -261,3 +261,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 70 - React.memo() vs useMemo
 
 ## Day 71 - useCallback Hook
+
+## Day 72 - Introduction to React Router v6.4 

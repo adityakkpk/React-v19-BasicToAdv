@@ -1,9 +1,27 @@
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import About from './pages/About';
+
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <Home />
+    },
+    {
+      path:'/contact',
+      element: <Contact />
+    },
+    {
+      path:'/about',
+      element: <About />
+    },
+  ]);
+
   return (
-    <>
-      <div className='bg-black text-xl text-white'>React Router</div>
-    </>
+    <RouterProvider router={router}/>
   )
 }
 

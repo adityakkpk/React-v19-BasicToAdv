@@ -263,3 +263,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 71 - useCallback Hook
 
 ## Day 72 - Introduction to React Router v6.4 
+
+## Day 73 - createRoutesFromElements Helper Function

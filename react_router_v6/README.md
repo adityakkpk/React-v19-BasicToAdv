@@ -4,3 +4,4 @@ React Router is a popular JavaScript framework used for handling routing in Reac
 
 ## createRoutesFromElements Helper Function / (old method)
 
+## React Router App Layout & Outlet Component: Render Nested Elements in Your React App

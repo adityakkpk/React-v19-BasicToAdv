@@ -267,3 +267,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 73 - createRoutesFromElements Helper Function
 
 ## Day 74 - React Router App Layout & Outlet Component: Render Nested Elements in Your React App
+
+## Day 75 - Building a Dynamic Navigation Bar with React Router

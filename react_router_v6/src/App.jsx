@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Services from "./pages/Services";
 import AppLayout from "./Components/Layout/AppLayout";
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
         },
         {
           path: "/contact",

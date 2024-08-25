@@ -13,3 +13,9 @@ Creating a Layout for our application.
 ## Building a Dynamic Navigation Bar with React Router
 
 Building Dynamic Header using <NavLink/> component
+
+## Active Links in React Navigation
+
+- NavLink gives you the `isActive` variable by using this we can create a Active link.
+    - We can use `isActive` in class
+    - We can use `isActive` in `style` attribute

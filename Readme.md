@@ -273,3 +273,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 76 - Active Links in React Navigation
 
 ## Day 77 - Handling Error Pages in React Router
+
+## Day 78 - useNavigate Hook in React Router: Seamless Page Redirection & Back Button Setup

@@ -26,3 +26,5 @@ Building Dynamic Header using <NavLink/> component
 - we can do it in two ways:
     - by using `errorElement`
     - by using "*" path and `NotFound` page
+
+## useNavigate Hook in React Router: Seamless Page Redirection & Back Button Setup

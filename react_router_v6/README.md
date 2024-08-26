@@ -19,3 +19,10 @@ Building Dynamic Header using <NavLink/> component
 - NavLink gives you the `isActive` variable by using this we can create a Active link.
     - We can use `isActive` in class
     - We can use `isActive` in `style` attribute
+
+## Handling Error Pages in React Router
+
+- Creating a page for handling 404(page not found) error with `useRouteError` hook
+- we can do it in two ways:
+    - by using `errorElement`
+    - by using "*" path and `NotFound` page

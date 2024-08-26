@@ -9,12 +9,15 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import AppLayout from "./Components/Layout/AppLayout";
+import ErrorPage from "./pages/ErrorPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      // errorElement: <ErrorPage /> ,
       children: [
         {
           path: "/",
@@ -32,6 +35,10 @@ function App() {
           path: "/about",
           element: <About />,
         },
+        {
+          path:"*",
+          element: <NotFound />
+        }
       ],
     },
   ]);

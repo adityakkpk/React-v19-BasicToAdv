@@ -90,7 +90,7 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 
 ## Day 16 - React Coding Challenge: Passing JSX as Props in React
 
-* Challange
+* Challenge
 * Solution
 
 ## Day 17 - Adding CSS styles in React
@@ -271,3 +271,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 75 - Building a Dynamic Navigation Bar with React Router
 
 ## Day 76 - Active Links in React Navigation
+
+## Day 77 - Handling Error Pages in React Router

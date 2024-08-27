@@ -7,10 +7,11 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Services from "./pages/Services";
 import AppLayout from "./Components/Layout/AppLayout";
 import ErrorPage from "./pages/ErrorPage";
 import NotFound from "./pages/NotFound";
+import Movies from "./pages/Movie";
+import {getMoviesData} from "./api/GetAPIData";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,8 +25,9 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/services",
-          element: <Services />,
+          path: "/movies",
+          element: <Movies />,
+          loader: getMoviesData,
         },
         {
           path: "/contact",

@@ -28,3 +28,15 @@ Building Dynamic Header using <NavLink/> component
     - by using "*" path and `NotFound` page
 
 ## useNavigate Hook in React Router: Seamless Page Redirection & Back Button Setup
+
+using this hook we can implement navigators in our page.
+
+## Fetch API Data with React Router Loaders🔥 No useEffect Needed
+
+Step 1 - Function to Fetch Data
+
+Step 2 - Pass the function name as the value to the loader property in that page route
+
+Step 3 - Get the data of the API bu using `useLoaderData()` function.
+
+Step 4 - Display the data

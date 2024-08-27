@@ -52,10 +52,10 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/services"
+                to="/movies"
                 className={({isActive}) => `block py-2 px-3 md:p-0 ${isActive ? "text-blue-600" : "text-white"}`}
               >
-                Services
+                Movies
               </NavLink>
             </li>
             <li>

@@ -39,4 +39,13 @@ Step 2 - Pass the function name as the value to the loader property in that page
 
 Step 3 - Get the data of the API bu using `useLoaderData()` function.
 
-Step 4 - Display the data
+Step 4 - Display the 
+
+## Create Global Loading States in React Using React Router & useNavigation
+
+* **`useNavigation()` hook:**
+    - `Syntax`: const navigation = useNavigation();
+    - `navigation.state` : 
+        - `idle`
+        - `submitting`
+        - `loading`

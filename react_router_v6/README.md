@@ -49,3 +49,6 @@ Step 4 - Display the
         - `idle`
         - `submitting`
         - `loading`
+
+
+## Secure Your React App: Using ENV Variables to Protect Private Data

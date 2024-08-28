@@ -277,3 +277,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 78 - useNavigate Hook in React Router: Seamless Page Redirection & Back Button Setup
 
 ## Day 79 - Fetch API Data with React Router Loaders🔥 No useEffect Needed
+
+## Day 80 - Create Global Loading States in React Using React Router & useNavigation

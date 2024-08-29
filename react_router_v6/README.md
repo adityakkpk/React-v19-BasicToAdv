@@ -52,3 +52,9 @@ Step 4 - Display the
 
 
 ## Secure Your React App: Using ENV Variables to Protect Private Data
+
+* Create a `.env` file.
+* Add all your secret data in it.
+* And use it by using `import.meta.env.ENV_VARIABLE`
+
+## Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie

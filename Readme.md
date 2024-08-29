@@ -281,3 +281,5 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 ## Day 80 - Create Global Loading States in React Using React Router & useNavigation
 
 ## Day 81 - Secure Your React App: Using ENV Variables to Protect Private Data
+
+## Day 82 - Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie

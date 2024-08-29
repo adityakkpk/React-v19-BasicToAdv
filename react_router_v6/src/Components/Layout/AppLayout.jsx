@@ -6,6 +6,7 @@ import WaveLoader from './Loading'
 
 const AppLayout = () => {
 
+  // Global Loader
   const navigation = useNavigation();
   console.log(navigation);
 

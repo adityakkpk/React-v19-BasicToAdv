@@ -1,9 +1,9 @@
-export const getMoviesData = async () => {
+export const getMovieDetails = async ({ params }) => {
   try {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=${
+      `http://www.omdbapi.com/?i=${params.ID}&apikey=${
         import.meta.env.VITE_API_KEY
-      }&s=titanic&page=1`
+      }`
     );
     const data = response.json();
     return data;

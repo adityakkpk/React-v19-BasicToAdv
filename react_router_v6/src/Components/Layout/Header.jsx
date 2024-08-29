@@ -12,7 +12,7 @@ const Header = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            MovieBite
           </span>
         </a>
         <button
@@ -52,7 +52,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/movies"
+                to="/movie"
                 className={({isActive}) => `block py-2 px-3 md:p-0 ${isActive ? "text-blue-600" : "text-white"}`}
               >
                 Movies

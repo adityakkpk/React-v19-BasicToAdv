@@ -1,13 +1,19 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
+import { Card } from '../Components/UI/Card';
 
 const Movies = () => {
   const moviesData = useLoaderData();
   console.log(moviesData);
 
   return (
-    <div className='flex flex-col gap-2 justify-center items-center my-3'>{moviesData.name}</div>
-  )
+    <ul className="container flex flex-wrap justify-center items-center gap-3 ">
+      {moviesData &&
+        moviesData.Search.map((curMovie) => {
+          return <Card key={curMovie.imdbID} curMovie={curMovie} />;
+        })}
+    </ul>
+  );
 }
 
 export default Movies

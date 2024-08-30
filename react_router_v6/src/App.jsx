@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import Contact, { contactData } from "./pages/Contact";
 import About from "./pages/About";
 import AppLayout from "./Components/Layout/AppLayout";
 import ErrorPage from "./pages/ErrorPage";
@@ -39,6 +39,7 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+          action: contactData,
         },
         {
           path: "/about",

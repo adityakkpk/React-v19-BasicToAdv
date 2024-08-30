@@ -58,3 +58,11 @@ Step 4 - Display the
 * And use it by using `import.meta.env.ENV_VARIABLE`
 
 ## Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
+
+## Handle Contact Form Data with React Router Form Component & Action
+
+1. Change your `form` tag to `Form` given by react-router-dom
+2. Provide `action` and `method` properties to `Form`.
+3. Make sure to add name properties to all the child elements of `Form`
+4. Create a async Function with a parameter`{request}`. Which have a method called `formData().`
+4. Go to your routes and add a property `action` with the value: - function you have created

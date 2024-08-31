@@ -66,3 +66,7 @@ Step 4 - Display the
 3. Make sure to add name properties to all the child elements of `Form`
 4. Create a async Function with a parameter`{request}`. Which have a method called `formData().`
 4. Go to your routes and add a property `action` with the value: - function you have created
+
+## Final UI upgrades
+
+Upgrade UI as per your need

@@ -1,20 +1,16 @@
-import React, { useEffect } from 'react'
-import { getPosts } from './api/PostApi';
+import React, { useEffect, useState } from "react";
+import Posts from "./components/Posts";
+import Form from "./components/Form";
 
 const App = () => {
-
-  const getPostData = async () => {
-    const res = await getPosts();
-    console.log(res);
-  }
   
-  useEffect(() => {
-    getPostData();
-  },[])
 
   return (
-    <div className='text-center text-4xl'>Hello world!</div>
-  )
-}
+    <main className="bg-slate-900 w-lvw flex flex-col justify-center items-center gap-5 text-white py-5">
+      <Form />
+      <Posts />
+    </main>
+  );
+};
 
-export default App
+export default App;

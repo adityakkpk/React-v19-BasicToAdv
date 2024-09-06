@@ -292,4 +292,8 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 
 ## Day 85 - Complete Axios in React for Beginners in Hindi
 
+## Day 86 - Build a Full-Stack React App with Axios & Real APIs: Mastering CRUD Operations
+
+## Day 87 - CRUD in React: HTTP GET Method to Fetch & Display Data with Axios + Styling
+
 ---

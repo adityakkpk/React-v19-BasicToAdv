@@ -296,4 +296,6 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 
 ## Day 87 - CRUD in React: HTTP GET Method to Fetch & Display Data with Axios + Styling
 
+## Day 88 - DELETE Data with Axios
+
 ---

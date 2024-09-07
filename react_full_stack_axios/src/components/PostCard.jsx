@@ -1,6 +1,6 @@
 import React from "react";
 
-const PostCard = ({ data }) => {
+const PostCard = ({ data, handleDelete }) => {
   return (
     <div className="w-[320px] py-2 px-2 flex flex-col border-l-2 bg-slate-700 rounded">
       <p className="h-[30px]">{data.id}.</p>
@@ -10,7 +10,7 @@ const PostCard = ({ data }) => {
         <button className="px-5 py-1 rounded bg-green-500 text-black">
           Edit
         </button>
-        <button className="px-5 py-1 rounded bg-red-500 text-black">
+        <button className="px-5 py-1 rounded bg-red-500 text-black" onClick={() => {handleDelete(data.id)}}>
           Delete
         </button>
       </div>

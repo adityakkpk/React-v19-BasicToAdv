@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { deletePost, getPosts } from "../api/PostApi";
 import PostCard from "./PostCard";
 
-const Posts = () => {
-  const [data, setData] = useState([""]);
+const Posts = ({data, setData}) => {
 
   const getPostData = async () => {
     const res = await getPosts();
     setData(res.data);
-    console.log(res.data);
+    // console.log(res.data);
   };
 
   const handleDeletePost = async (id) => {
@@ -19,11 +18,9 @@ const Posts = () => {
         setData(newPosts);
       }else {
         console.log('Failed to delete the post:', res.status);
-        
       }
     } catch (error) {
       console.log(error);
-      
     }
     
   }

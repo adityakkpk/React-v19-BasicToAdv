@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { deletePost, getPosts } from "../api/PostApi";
 import PostCard from "./PostCard";
 
-const Posts = ({data, setData}) => {
+const Posts = ({data, setData, updateData, setUpdateData}) => {
+  
 
   const getPostData = async () => {
     const res = await getPosts();
@@ -22,8 +23,9 @@ const Posts = ({data, setData}) => {
     } catch (error) {
       console.log(error);
     }
-    
   }
+
+  const handleUpdatePost = (post) => setUpdateData(post);
 
   useEffect(() => {
     getPostData();
@@ -31,7 +33,7 @@ const Posts = ({data, setData}) => {
 
   return (
     <ul className="w-full flex flex-wrap justify-center gap-3">
-      {data.length > 1 && data.map((post) => <PostCard data={post} handleDelete={handleDeletePost} key={post.id} />)}
+      {data.length > 1 && data.map((post) => <PostCard post={post} handleDelete={handleDeletePost} key={post.id} handleUpdatePost={handleUpdatePost} />)}
     </ul>
   );
 };

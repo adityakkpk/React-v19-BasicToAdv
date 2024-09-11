@@ -4,10 +4,7 @@ import { useState } from "react";
 
 const App = () => {
   const [data, setData] = useState([""]);
-  const [updateData, setUpdateData] = useState({
-    title: '',
-    body: '',
-  });
+  const [updateData, setUpdateData] = useState({});
 
   return (
     <main className="bg-slate-900 w-lvw flex flex-col justify-center items-center gap-5 text-white py-5">

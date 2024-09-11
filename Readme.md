@@ -300,6 +300,8 @@ Started Learning Reactjs v19 from basic to advance from `Thapa Technical` youtub
 
 ## Day 89 - Add Data to Real API & React Full Stack App with Axios POST Method
 
-## Day 90 - PUT Method in Axios
+## Day 90 - PUT/Update Method in Axios Part 1
+
+## Day 91-  PUT/Update Method in Axios Part 2
 
 ---

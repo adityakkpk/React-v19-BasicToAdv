@@ -7,7 +7,9 @@ const MainLayout = () => {
   return (
     <>
       <Header />
+      <main className="min-h-[25vh]">
       <Outlet />
+      </main>
       <Footer />
     </>
   );

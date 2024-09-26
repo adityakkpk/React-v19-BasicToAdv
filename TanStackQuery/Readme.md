@@ -13,3 +13,7 @@ one of the most powerful tools for managing the server-side state in React.
 * **Automatic Caching :** If your data gets stole or out of date, TanStack can refetch in the background.
 
 * **Pagination and Infinite Scrolling :** Handling Pagination or infinite Scrolling are made easy with the TanStack Query.
+
+### Installation, Routing and Components
+
+* **Installation** : `npm i @tanstack/react-query`

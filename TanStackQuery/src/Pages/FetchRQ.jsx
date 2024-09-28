@@ -2,7 +2,7 @@ import React from 'react'
 
 const FetchRQ = () => {
   return (
-    <div>FetchRQ</div>
+    <div className='text-center my-5 text-xl font-bold'>FetchRQ</div>
   )
 }
 

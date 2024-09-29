@@ -25,3 +25,11 @@ one of the most powerful tools for managing the server-side state in React.
 * Wrap your application with a QueryClientProvider and pass a QueryClient instance as prop.
 
 * **QueryClient :** It is the core part of the react-query library. It manages all the caching, background fetching, data synchronization, and state management related to the query. It provides a centralized store for managing and caching asynchronous data in your application.
+
+## Data Fetching in React-Query
+
+* **useQuery() :** useQuery() hook is used to fetch data in TanStack-Query. It takes an object as input.
+
+* *queryKey* : It is one of the keys of the object that passed in the useQuery() hook. It is typically an array of string that uniquely identifies a query. It allows React Query to determine if the data in the cache is associated with a particular request.
+
+It is used to cache data with a specific key and refetch or update data when certain dependencies changes.

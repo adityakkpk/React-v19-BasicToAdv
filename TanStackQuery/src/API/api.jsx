@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://api.github.com/users',
+    baseURL: 'https://jsonplaceholder.typicode.com',
 });
 
-export const getUserDetails = async (username = "adityakkpk") => {
+export const getPostsData = async () => {
     try {
-        const response = await api.get(`/${username}`);
+        const response = await api.get(`/posts`);
         return response.data;
     } catch (error) {
         console.error(error);

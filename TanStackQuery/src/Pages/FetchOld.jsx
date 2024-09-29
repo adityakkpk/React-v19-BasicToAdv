@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { getUserDetails } from "../API/api";
+import { getPostsData } from "../API/api";
 
 const FetchOld = () => {
-  const [data, setData] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  const getData = async () => {
-    const response = await getUserDetails("adityakkpk");
-    setData(response);
-    console.log(response);
+  const getPosts = async () => {
+    const response = await getPostsData();
+    setPosts(response);
   };
 
   useEffect(() => {
-    getData();
+    getPosts();
   }, []);
 
   return (
-    <main>
+    <section>
       <div className="text-center my-5 text-xl font-bold">FetchOld</div>
-      <div className="flex justify-center my-10 text-xl">{data?.name}</div>
-    </main>
+      {posts?.map((data) => (
+        <div key={data.id} className="flex justify-center my-10 text-xl">{data.title}</div>
+      ))}
+    </section>
   );
 };
 

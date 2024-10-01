@@ -9,7 +9,11 @@ const FetchRQ = () => {
     queryFn: getPostsData,
   });
 
-  if (isPending) return <div>Loading...</div>;
+  if (isPending) return (<div>
+    <div className="flex justify-center items-center h-screen">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+    </div>
+  </div>)
   if (isError) return <div>Error: {error.message}</div>;
 
   return (

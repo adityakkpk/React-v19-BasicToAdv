@@ -42,3 +42,11 @@ const { data, isPending, isError, error } = useQuery({
   queryFn: getPostsData,
 });
 ```
+
+## React Query Dev Tools for Debugging
+
+* React Query Dev Tools for Debugging is a separate package for debugging purposes. You can use it to by installing it and calling it Inside your application. 
+
+* **useMutation** is used for creating, uploading and deleting data and allows triggering manual side effects.
+
+* React Query caches the data for 30 minutes.

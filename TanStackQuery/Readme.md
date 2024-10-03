@@ -50,3 +50,13 @@ const { data, isPending, isError, error } = useQuery({
 * **useMutation** is used for creating, uploading and deleting data and allows triggering manual side effects.
 
 * React Query caches the data for 30 minutes.
+
+## Garbage Collection Time in React Query: Control Your Data Caching
+
+In React Query v5, the cacheTime option has been renamed to gcTime.
+
+When you use React Query to get data, it saves the result in the cache. This means if you ask for the same data again, the cache data will be served. The cache updates automatically when the data changes. So you always get the latest information.
+
+* *Use Case* - Imagine if you are fetching a list of users. If you go back to the same page, React queries will show the saved list from the cache instead of the making a new request to the server, It makes your application fast. If a new user is added, React query will automatically updates the list.
+
+* *By  Default, inactive queries are garbage collected after 5 minutes.* This means that if query is not being used for 5 minutes, the cache for that query will be cleaned up.

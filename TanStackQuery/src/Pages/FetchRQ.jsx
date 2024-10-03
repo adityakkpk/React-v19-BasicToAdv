@@ -7,7 +7,8 @@ const FetchRQ = () => {
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["posts"],
     queryFn: getPostsData,
-    gcTime: 1000,
+    // gcTime: 1000,
+    staleTime: 5000
   });
 
   if (isPending) return (<div>

@@ -8,7 +8,9 @@ const FetchRQ = () => {
     queryKey: ["posts"],
     queryFn: getPostsData,
     // gcTime: 1000,
-    staleTime: 5000
+    // staleTime: 5000,
+    // refetchInterval: 10000, // refetch every 10 seconds,
+    refetchIntervalInBackground: 10000, // refetch every 10 seconds
   });
 
   if (isPending) return (<div>

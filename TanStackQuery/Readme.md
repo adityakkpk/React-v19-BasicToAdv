@@ -70,3 +70,12 @@ In Garbage Collection mode, even if the we get the data from the cache, it is ma
 When data is initially fetched or updated, it is considered fresh. After the stale time duration has passed, the data is considered stale. 
 
 Default staleTime is 0. This means that data is considered stale after being fetched. This is the reason why data is fetched even if the data is stored in the cache.
+
+## Real-Time Polling in React Query: Constantly Fetch Fresh Data, Even in the Background
+
+Polling refers to the technique of fetching data from an API at regular intervals to keep the UI up to date with latest information. This is especially useful for scenarios where data changes frequently and you want to display real-rime updates without requiring the user to manually refresh the page.
+
+`refetchInterval` option : The simplest way to enable polling is to pass the `refetchInterval` option to the `useQuery` hook. This option specifies the interval at which React Query automatically fetches data.
+
+// When you want to fetch data even in the background or you are in another tab,
+`refetchIntervalBackground` option : If you want to continue polling even in the background or component is not mounted.

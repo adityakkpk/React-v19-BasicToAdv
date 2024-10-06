@@ -12,3 +12,12 @@ export const getPostsData = async () => {
         console.error(error);
     }
 }
+
+export const fetchIndividualPost = async (id) => {
+    try {
+        const response = await api.get(`/posts/${id}`);
+        return response.data;
+    } catch (error) {
+        console.log(error);        
+    }
+}

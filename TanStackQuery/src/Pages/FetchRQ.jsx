@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getPostsData } from "../API/api";
+import { NavLink } from "react-router-dom";
 
 const FetchRQ = () => {
 
@@ -24,8 +25,13 @@ const FetchRQ = () => {
     <section>
       <div className="text-center my-5 text-xl font-bold">FetchRQ</div>
       {data?.map((post) => (
-        <div key={post.id} className="flex justify-center my-10 text-xl">
-          {post.title}
+        <div key={post.id} className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-4">
+          <NavLink to={`/rq/${post.id}`} className="md:flex">
+            <div className="p-8">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{post.title}</div>
+              <p className="mt-2 text-gray-500">{post.body}</p>
+            </div>
+          </NavLink>
         </div>
       ))}
     </section>

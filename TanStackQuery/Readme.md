@@ -79,3 +79,5 @@ Polling refers to the technique of fetching data from an API at regular interval
 
 // When you want to fetch data even in the background or you are in another tab,
 `refetchIntervalBackground` option : If you want to continue polling even in the background or component is not mounted.
+
+## One Single Dynamic Detailed Page

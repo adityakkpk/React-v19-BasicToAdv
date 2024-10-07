@@ -81,3 +81,28 @@ Polling refers to the technique of fetching data from an API at regular interval
 `refetchIntervalBackground` option : If you want to continue polling even in the background or component is not mounted.
 
 ## One Single Dynamic Detailed Page
+
+* Add a new page to the application
+
+## How to Create Pagination in React Using React Query🔥
+
+* Add pagination to our FetchRQ page
+
+## React Query useMutation Hook: Simplify CRUD & Delete Posts Easily
+
+* **useMutation Hook** : The `useMutation` hook is a part of React Query and is used for operations that modify data, like Create, Update, Delete.
+
+It is used to modify or send data to a server (create, update, delete operations)
+
+```javascript
+const mutation = useMutation(mutationFn, {
+  //optional configuration options
+});
+```
+
+we an provide various configuration option to custumize the behavior of the mutation, such as: 
+
+`onSuccess:` A callback function that runs when the mutation is successful.
+`onError:` A callback function that runs when the mutation fails.
+`onSettled:` A callback function that runs regardless of whether the mutation was successful or not.
+`mutationKey:` A unique key to identify the mutation in the cache.

@@ -4,9 +4,18 @@ const api = axios.create({
     baseURL: 'https://jsonplaceholder.typicode.com',
 });
 
-export const getPostsData = async () => {
+// export const getPostsData = async () => {
+//     try {
+//         const response = await api.get(`/posts`);
+//         return response.data;
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+export const getPostsData = async (pageNo) => {
     try {
-        const response = await api.get(`/posts`);
+        const response = await api.get(`/posts?_start=${pageNo}&_limit=3`);
         return response.data;
     } catch (error) {
         console.error(error);

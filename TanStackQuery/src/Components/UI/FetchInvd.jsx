@@ -18,7 +18,21 @@ export default function FetchIndv() {
         </div>
       </div>
     );
-  if (isError) return <div>Error: {error.message}</div>;
+  if (isError) return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-md text-center">
+        <h1 className="text-4xl font-bold text-red-600 mb-4">Oops!</h1>
+        <p className="text-xl text-gray-700 mb-6">Something went wrong</p>
+        <p className="text-gray-600 mb-8">{error.message}</p>
+        <Link
+          to="/rq"
+          className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
+        >
+          Go Back
+        </Link>
+      </div>
+    </div>
+  );
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-8 p-5">

@@ -106,3 +106,11 @@ we an provide various configuration option to custumize the behavior of the muta
 `onError:` A callback function that runs when the mutation fails.
 `onSettled:` A callback function that runs regardless of whether the mutation was successful or not.
 `mutationKey:` A unique key to identify the mutation in the cache.
+
+* **Mutate() :** It is used to execute the mutation in React Query. The process is the same wheather you are: 
+
+Delete data
+Update data
+Creating new data
+
+When you call `mutate()`, it tells React Query to run the mutation function defined inside the useMutation hook. This is needed because the mutation is an action that chanes data, unlike queries, which are used to fetch data and are often auto-executed by React Query when certain conditions are met.

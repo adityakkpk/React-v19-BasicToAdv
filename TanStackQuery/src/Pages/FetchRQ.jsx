@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { getPostsData } from "../API/api";
+import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { deletePost, getPostsData } from "../API/api";
 import { NavLink } from "react-router-dom";
 
 const FetchRQ = () => {
   const [pageNo, setPageNo] = useState(0);
+
+  const queryClient = useQueryClient();
 
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["posts", pageNo],
@@ -14,6 +16,16 @@ const FetchRQ = () => {
     // refetchInterval: 10000, // refetch every 10 seconds,
     refetchIntervalInBackground: 10000, // refetch every 10 seconds
     placeholderData: keepPreviousData,
+  });
+
+  // mutation function to delete the post
+  const deleteMutation = useMutation({
+    mutationFn: (id) => deletePost(id),
+    onSuccess: (data, id) => {
+      queryClient.setQueryData(["posts", pageNo], (currElem) => {
+        return currElem?.filter((post) => post.id !== id);
+      });
+    }
   });
 
   if (isPending)
@@ -45,6 +57,7 @@ const FetchRQ = () => {
               <p className="mt-2 text-gray-500">{post.body}</p>
             </div>
           </NavLink>
+          <button className="bg-red-500 text-white px-3 py-1 rounded-md m-5" onClick={() => deleteMutation.mutate(post.id)}>Delete</button>
         </div>
       ))}
       <div className="flex gap-5 m-10">

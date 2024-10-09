@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { deletePost, getPostsData } from "../API/api";
+import {
+  keepPreviousData,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
+import { deletePost, getPostsData, updatePost } from "../API/api";
 import { NavLink } from "react-router-dom";
 
 const FetchRQ = () => {
@@ -21,11 +26,25 @@ const FetchRQ = () => {
   // mutation function to delete the post
   const deleteMutation = useMutation({
     mutationFn: (id) => deletePost(id),
-    onSuccess: (data, id) => {
+    onSuccess: (apiData, id) => {
       queryClient.setQueryData(["posts", pageNo], (currElem) => {
         return currElem?.filter((post) => post.id !== id);
       });
-    }
+    },
+  });
+
+  // mutation function to update the post
+  const updateMutation = useMutation({
+    mutationFn: (id) => updatePost(id),
+    onSuccess: (apiData, postId) => {
+      console.log(apiData.data.title, postId);
+
+      queryClient.setQueryData(["posts", pageNo], (postsData) => {
+        return postsData?.map((post) =>
+          post.id === postId ? { ...post, title: apiData.data.title } : post
+        );
+      });
+    },
   });
 
   if (isPending)
@@ -57,7 +76,19 @@ const FetchRQ = () => {
               <p className="mt-2 text-gray-500">{post.body}</p>
             </div>
           </NavLink>
-          <button className="bg-red-500 text-white px-3 py-1 rounded-md m-5" onClick={() => deleteMutation.mutate(post.id)}>Delete</button>
+          <button
+            className="bg-red-500 text-white px-3 py-1 rounded-md m-5"
+            onClick={() => deleteMutation.mutate(post.id)}
+          >
+            Delete
+          </button>
+
+          <button
+            className="bg-red-500 text-white px-3 py-1 rounded-md m-5"
+            onClick={() => updateMutation.mutate(post.id)}
+          >
+            Update
+          </button>
         </div>
       ))}
       <div className="flex gap-5 m-10">

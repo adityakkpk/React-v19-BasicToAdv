@@ -113,4 +113,6 @@ Delete data
 Update data
 Creating new data
 
-When you call `mutate()`, it tells React Query to run the mutation function defined inside the useMutation hook. This is needed because the mutation is an action that chanes data, unlike queries, which are used to fetch data and are often auto-executed by React Query when certain conditions are met.
+When you call `mutate()`, it tells React Query to run the mutation function defined inside the useMutation hook. This is needed because the mutation is an action that chances data, unlike queries, which are used to fetch data and are often auto-executed by React Query when certain conditions are met.
+
+## Update Post with React Query useMutation | Sync API and Local Cache

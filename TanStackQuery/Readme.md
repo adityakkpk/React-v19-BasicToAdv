@@ -107,7 +107,7 @@ we an provide various configuration option to custumize the behavior of the muta
 `onSettled:` A callback function that runs regardless of whether the mutation was successful or not.
 `mutationKey:` A unique key to identify the mutation in the cache.
 
-* **Mutate() :** It is used to execute the mutation in React Query. The process is the same wheather you are: 
+* **Mutate() :** It is used to execute the mutation in React Query. The process is the same whether you are: 
 
 Delete data
 Update data
@@ -116,3 +116,17 @@ Creating new data
 When you call `mutate()`, it tells React Query to run the mutation function defined inside the useMutation hook. This is needed because the mutation is an action that chances data, unlike queries, which are used to fetch data and are often auto-executed by React Query when certain conditions are met.
 
 ## Update Post with React Query useMutation | Sync API and Local Cache
+
+## Infinite Scroll using React Query
+
+* **Scroll Events**
+
+  - `window.innerHeight` : The height of the visible part of the web page (the viewport ).
+
+  - `window.scrollY` : The amount of pixels the user has scroll down the page.
+
+  - `document.documentElement.scrollHeight` : The total height of the webpage, including the part not visible without scroll.
+
+When the sum of `window.innerHeight` and `window.scrollY` is approximately equal to `document.documentElement.scrollHeight - 1` the user is near the bottom of the page.
+
+* **useInfiniteQuery() hook:**

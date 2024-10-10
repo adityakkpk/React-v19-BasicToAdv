@@ -8,6 +8,7 @@ import FetchRQ from "./Pages/FetchRQ";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import FetchIndv from "./Components/UI/FetchInvd";
 import NotFound from "./Components/UI/NotFound";
+import InfiniteScroll from "./Pages/InfiniteScroll";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
+      },
+      {
+        path: "infinite",
+        element: <InfiniteScroll />,
       }
     ],
   },

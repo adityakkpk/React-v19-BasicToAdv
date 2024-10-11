@@ -130,3 +130,7 @@ When you call `mutate()`, it tells React Query to run the mutation function defi
 When the sum of `window.innerHeight` and `window.scrollY` is approximately equal to `document.documentElement.scrollHeight - 1` the user is near the bottom of the page.
 
 * **useInfiniteQuery() hook:**
+
+## Infinite Scrolling in React Query with React-Intersection-Observer Package
+
+* **React-Intersection-Observer:** It is a React library that provides a way to observe the intersection of a target element with the viewport. It is commonly used for implementing infinite scrolling, lazy loading, and other similar features.

@@ -1,6 +1,7 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import React, { useEffect } from "react";
 import { fetchUsers } from "../API/api";
+import { useInView } from "react-intersection-observer";
 
 const InfiniteScroll = () => {
   const { data, hasNextPage, fetchNextPage, isFetchingNextPage, status } =
@@ -13,20 +14,28 @@ const InfiniteScroll = () => {
       },
     });
 
-  const handleScroll = () => {
-    const bottom =
-      window.innerHeight + window.scrollY >=
-      document.documentElement.scrollHeight - 500;
+  // const handleScroll = () => {
+  //   const bottom =
+  //     window.innerHeight + window.scrollY >=
+  //     document.documentElement.scrollHeight - 500;
 
-    if (bottom && hasNextPage) {
-      fetchNextPage();
-    }
-  };
+  //   if (bottom && hasNextPage) {
+  //     fetchNextPage();
+  //   }
+  // };
+
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasNextPage]);
+    // window.addEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
+
+    if (inView && hasNextPage) {
+      fetchNextPage();
+    }
+  }, [inView, fetchNextPage, hasNextPage]);
 
   if (status === "loading")
     return <div className="text-center py-4">Loading...</div>;
@@ -45,7 +54,7 @@ const InfiniteScroll = () => {
           {page.map((user) => (
             <div
               key={user.id}
-              className="flex items-center bg-white shadow-md rounded-lg p-4 mb-4"
+              className={`flex items-center bg-white shadow-md rounded-lg p-4 mb-4 ${user.id === 1 ? "bg-gray-400" : ""}`}
             >
               <img
                 src={user.avatar_url || "https://via.placeholder.com/50"}
@@ -62,7 +71,9 @@ const InfiniteScroll = () => {
           ))}
         </React.Fragment>
       ))}
-      {isFetchingNextPage && <div>Loading...</div>}
+      <div ref={ref}>
+        {isFetchingNextPage ? <div>Loading more...</div> : hasNextPage ? "Scroll down to load more" : "no more users"}
+      </div>
     </div>
   );
 };

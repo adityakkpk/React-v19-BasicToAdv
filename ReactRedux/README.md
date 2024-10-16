@@ -25,3 +25,21 @@ Redux solves this problem by creating a centralized store that holds all the dat
 - *Reducers*
     - How to do. It actually change the data in the store based on the actions.
 
+## 2: Create Reducer Functions to Add & Delete Tasks in React
+
+* **Reducer Functions**
+    - A reducer function that decides how the state should change based on the action. The reducer takes the current state and an action, and returns a new state.
+
+* *Key things to remember*
+    1. Reducer must always return a new state.
+    2. They should never modify the old state directly.
+
+* **Syntax:**
+```javascript
+    function reducer(state = initialState, action) {}
+```
+
+The reducer takes two arguments: the state and the action
+
+*State:* This is the current state.
+*Action:* This is the action that tells the reducer what to do. It has the type and sometimes a payload(Which is the data).

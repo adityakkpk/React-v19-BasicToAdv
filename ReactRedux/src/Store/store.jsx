@@ -23,20 +23,29 @@ const taskReducer = (state = initialState, action) => {
   }
 };
 
+// Action creators : This is not Redux this is just a convention 
+const addTask = (data) => {
+  return { type: ADD_TASK, payload: data };
+}
+
+const deleteTask = (data) => {
+  return { type: DELETE_TASK, payload: data };
+}
+
 // Create the Redux state using the reducer
 const store = createStore(taskReducer);
 console.log(store);
 
 console.log("Initial state", store.getState());
 
-store.dispatch({type: ADD_TASK, payload: "Do not talk more to people" });
+store.dispatch(addTask("Do not talk more to people"));
 
 console.log("After adding task 1:", store.getState());
 
-store.dispatch({type: ADD_TASK, payload: "Be focused on your goal" });
+store.dispatch(addTask("Be focused on your goal"));
 
 console.log("After adding task 2:", store.getState());
 
-store.dispatch({type: DELETE_TASK, payload: 0 });
+store.dispatch(deleteTask(0));
 
 console.log("After Deleting task 1:", store.getState());

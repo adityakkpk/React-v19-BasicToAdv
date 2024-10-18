@@ -73,3 +73,23 @@ store.dispatch({type: "ACTION_TYPE", payload: data});
 getState() retrieves the current state of the Redux store.
 
 This is useful for accessing the store after it has been updated or to monitor changes.
+
+## 4: How to Create and Dispatch Actions Easily
+
+* **Redux Action:**
+    - An action is an object that tells the Redux what to do. It must have a type property that describes the action.
+
+* *Syntax:*
+```javascript
+{ type: "ACTION_TYPE", payload: someData }
+```
+
+* **Action Creators:**
+    - An action creator is a function that creates an action object. This makes it easier to create action with different data.
+
+* *Example:*
+```javascript
+function createAction(data) {
+    return { type: 'action', payload: data };
+}
+```

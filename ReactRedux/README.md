@@ -93,3 +93,11 @@ function createAction(data) {
     return { type: 'action', payload: data };
 }
 ```
+
+## 5: Connect Redux with your React App
+
+To use Redux in a React app, we need to connect Redux's store and actions to the React components. This allows components to access the global store and dispatch actions.
+
+* **Steps:**
+    * *Step 1:* - Install react-redux
+    * *Step 2:* - Wrap the App with Provider

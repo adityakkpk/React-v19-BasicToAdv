@@ -33,7 +33,7 @@ const deleteTask = (data) => {
 }
 
 // Create the Redux state using the reducer
-const store = createStore(taskReducer);
+export const store = createStore(taskReducer);
 console.log(store);
 
 console.log("Initial state", store.getState());

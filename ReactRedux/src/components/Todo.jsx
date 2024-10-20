@@ -1,6 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Todo = () => {
+
+  const tasks = useSelector((state) => state.task);
+  console.log(tasks);
+
   return (
     <section className="container mx-auto p-4 flex justify-center items-center">
       <div className="px-10 py-5 border rounded-md shadow-lg bg-slate-700">
@@ -19,11 +24,25 @@ const Todo = () => {
           </button>
         </form>
         <ul className="space-y-2 h-72 overflow-y-scroll border border-red-400 p-1 rounded">
-          <li className="flex items-center border p-2 rounded-md">
+          {
+            tasks.map((task) => {
+              return (
+                <li key={Math.random()} className="flex items-center border p-2 rounded-md text-white">
+                  <span>{task}</span>
+                  <button className="ml-auto text-white px-2 py-1 rounded bg-red-400 hover:bg-slate-600 duration-300 active:bg-red-400">
+              Delete
+            </button>
+                </li>
+              );
+            })
+          }
+          {/* <li className="flex items-center border p-2 rounded-md">
             <input type="checkbox" className="mr-2" />
             <span className="text-white">Sample todo item</span>
-            <button className="ml-auto text-white px-2 py-1 rounded bg-red-400 hover:bg-slate-600 duration-300 active:bg-red-400">Delete</button>
-          </li>
+            <button className="ml-auto text-white px-2 py-1 rounded bg-red-400 hover:bg-slate-600 duration-300 active:bg-red-400">
+              Delete
+            </button>
+          </li> */}
         </ul>
       </div>
     </section>

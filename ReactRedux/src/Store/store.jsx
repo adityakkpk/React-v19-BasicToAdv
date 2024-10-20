@@ -39,13 +39,15 @@ console.log(store);
 console.log("Initial state", store.getState());
 
 store.dispatch(addTask("Do not talk more to people"));
+store.dispatch(addTask("Do not talk more to relatives"));
+store.dispatch(addTask("Do not talk more to friends"));
 
-console.log("After adding task 1:", store.getState());
+console.log("After adding tasks:", store.getState());
 
 store.dispatch(addTask("Be focused on your goal"));
 
 console.log("After adding task 2:", store.getState());
 
-store.dispatch(deleteTask(0));
+store.dispatch(deleteTask(2));
 
 console.log("After Deleting task 1:", store.getState());

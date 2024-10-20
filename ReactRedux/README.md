@@ -101,3 +101,14 @@ To use Redux in a React app, we need to connect Redux's store and actions to the
 * **Steps:**
     * *Step 1:* - Install react-redux
     * *Step 2:* - Wrap the App with Provider
+
+## 6: Access Redux Store data
+
+Redux provide a hook named `useSelector`, which is used to read the Redux store data.
+
+* *Syntax:*
+```javascript
+const count = useSelector(state => state.property);
+```
+
+* *Selector Function:* We define a selector function that takes the entire Redux store state as an argument and returns the specific piece of data that we need.

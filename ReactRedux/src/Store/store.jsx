@@ -24,11 +24,11 @@ const taskReducer = (state = initialState, action) => {
 };
 
 // Action creators : This is not Redux this is just a convention 
-const addTask = (data) => {
+export const addTask = (data) => {
   return { type: ADD_TASK, payload: data };
 }
 
-const deleteTask = (data) => {
+export const deleteTask = (data) => {
   return { type: DELETE_TASK, payload: data };
 }
 

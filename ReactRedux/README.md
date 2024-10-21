@@ -112,3 +112,8 @@ const count = useSelector(state => state.property);
 ```
 
 * *Selector Function:* We define a selector function that takes the entire Redux store state as an argument and returns the specific piece of data that we need.
+
+## 7: Dispatch Actions in React using Redux: Add and Delete Tasks with useDispatch
+
+Use the `useDispatch` hook to dispatch actions from a React component.
+

@@ -117,3 +117,7 @@ const count = useSelector(state => state.property);
 
 Use the `useDispatch` hook to dispatch actions from a React component.
 
+## 7: Redux DevTools
+
+* Installation
+* Configuration

@@ -1,4 +1,5 @@
 import { createStore } from "redux";
+import { composeWithDevTools } from "@redux-devtools/extension";
 
 const initialState = {
   task: [],
@@ -23,17 +24,17 @@ const taskReducer = (state = initialState, action) => {
   }
 };
 
-// Action creators : This is not Redux this is just a convention 
+// Action creators : This is not Redux this is just a convention
 export const addTask = (data) => {
   return { type: ADD_TASK, payload: data };
-}
+};
 
 export const deleteTask = (data) => {
   return { type: DELETE_TASK, payload: data };
-}
+};
 
 // Create the Redux state using the reducer
-export const store = createStore(taskReducer);
+export const store = createStore(taskReducer, composeWithDevTools());
 console.log(store);
 
 console.log("Initial state", store.getState());

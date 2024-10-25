@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTask, deleteTask } from "../Store/store";
+import { addTask, deleteTask, fetchTasks } from "../Store/store";
 
 const Todo = () => {
   const [task, setTask] = useState("");
@@ -14,6 +14,10 @@ const Todo = () => {
     console.log("Button Clicked");
     dispatch(addTask(task));
     setTask("");
+  };
+
+  const handleFetchTasks = () => {
+    dispatch(fetchTasks());
   };
 
   return (
@@ -35,6 +39,14 @@ const Todo = () => {
             Add Task
           </button>
         </form>
+
+        <button
+          onClick={handleFetchTasks}
+          className="my-5 text-white px-2 py-1 rounded bg-green-400 hover:bg-slate-600 duration-300 active:bg-red-400"
+        >
+          Fetch Tasks
+        </button>
+
         <ul className="space-y-2 h-72 overflow-y-scroll border border-red-400 p-1 rounded">
           {tasks.map((taskItem, idx) => {
             return (
@@ -42,7 +54,7 @@ const Todo = () => {
                 key={Math.random()}
                 className="flex items-center border p-2 rounded-md text-white"
               >
-                <span>{idx+1 + " : " + taskItem}</span>
+                <span>{idx + 1 + " : " + taskItem}</span>
                 <button
                   onClick={() => dispatch(deleteTask(idx))}
                   className="ml-auto text-white px-2 py-1 rounded bg-red-400 hover:bg-slate-600 duration-300 active:bg-red-400"
@@ -52,13 +64,6 @@ const Todo = () => {
               </li>
             );
           })}
-          {/* <li className="flex items-center border p-2 rounded-md">
-            <input type="checkbox" className="mr-2" />
-            <span className="text-white">Sample todo item</span>
-            <button className="ml-auto text-white px-2 py-1 rounded bg-red-400 hover:bg-slate-600 duration-300 active:bg-red-400">
-              Delete
-            </button>
-          </li> */}
         </ul>
       </div>
     </section>

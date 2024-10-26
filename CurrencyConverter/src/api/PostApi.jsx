@@ -11,7 +11,7 @@ axios.create({
 export const currencyConverter = async (currency) => {
     try {
         const res = await axios.get(`/${currency}.json`);
-        return res.data;
+        return res.data[currency];
     } catch (error) {
         console.error(error);
     }

@@ -117,13 +117,33 @@ const count = useSelector(state => state.property);
 
 Use the `useDispatch` hook to dispatch actions from a React component.
 
-## 7: Redux DevTools
+## 8: Redux DevTools
 
 * Installation
 * Configuration
 
-## 8: Redux Thunk in React: Fetch and Add API Data to  To-Do App
+## 9: Redux Thunk in React: Fetch and Add API Data to  To-Do App
 
 * **Redux Thunk**
     - It is a middleware that allows you to write action creators that return a function instead of an action. This function can perform asynchronous logic (like API calls) and dispatch actions after the operation completes (e.g., fetching tasks from API and then dispatching them to the store).
     - When you return a function from an action creator, Redux Thunk provides the dispatch function as an argument. This allows you to manually dispatch other actions.
+
+## 10: Redux Toolkit
+
+* **What is Redux Toolkit?**
+    - It is an official toolkit from the Redux team that makes working with Redux easier and less time-consuming.
+    - Instead of doing everything manually (like creating actions, reducers, and managing state immutability), RTK gives you the built-in functionality that handles most of that work for you.
+    - In simpler terms, it's a shortcut that helps you manage your app's state with code and fewer mistakes. The goal is to make Redux more beginner-friendly by reducing the amount of code.
+
+* **Why Redux Toolkit?**
+    - *Less Boilerplate*
+    - *Simpler Setup*
+    - *Built-in Async Handling*
+
+* **Advantages**
+    - Less Boilerplate Code
+    - Easier to work with State
+    - Better Async Logic
+    - Great Defaults
+
+## 11:

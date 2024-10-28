@@ -146,4 +146,15 @@ Use the `useDispatch` hook to dispatch actions from a React component.
     - Better Async Logic
     - Great Defaults
 
-## 11:
+## 11: Redux Toolkit Setup || configureStore & useSelector
+
+* **Setup Redux Toolkit**
+    ```javascript
+    import { configureStore } from "@reduxjs/toolkit";
+
+    export const store = configureStore({
+    reducer: {
+        taskReducer,// reducer function
+    },
+    });
+    ```

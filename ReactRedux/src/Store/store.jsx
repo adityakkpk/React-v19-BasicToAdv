@@ -39,8 +39,18 @@ export const deleteTask = (data) => {
 };
 
 // Create the Redux state using the reducer
-export const store = createStore(taskReducer, composeWithDevTools( applyMiddleware(thunk)));
-console.log(store);
+// export const store = createStore(taskReducer, composeWithDevTools( applyMiddleware(thunk)));
+// console.log(store);
+
+// Using Redux Toolkit
+
+import { configureStore } from "@reduxjs/toolkit";
+
+export const store = configureStore({
+  reducer: {
+    taskReducer,
+  },
+});
 
 console.log("Initial state", store.getState());
 

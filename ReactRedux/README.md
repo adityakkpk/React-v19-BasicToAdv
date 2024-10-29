@@ -158,3 +158,13 @@ Use the `useDispatch` hook to dispatch actions from a React component.
     },
     });
     ```
+
+## 12: createSlice in Redux Toolkit: Simplifying Action Creators & Reducers
+
+* **createSlice in Redux Toolkit**
+    - In RTK, `createSlice` is a utility function that Simplifies the process of creating a Redux slice of store. It combines actions and reducers into a single object, making the setup of Redux management more streamlines and organized.
+
+    - A slice is a essentially a section of the Redux Store, along with the action and reducers that operate on it. Using CreateSlice, you can create/define:
+        - The `initial state` of the slice.
+        - `Reducers` that defines how the state changes in response to actions.
+        - `Action Creators` automatically generated based on reducer name.

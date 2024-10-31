@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTask, deleteTask, fetchTasks } from "../Store/store";
+import { addTask, deleteTask } from "../Store/store";
 
 const Todo = () => {
   const [task, setTask] = useState("");
@@ -16,9 +16,9 @@ const Todo = () => {
     setTask("");
   };
 
-  const handleFetchTasks = () => {
-    dispatch(fetchTasks());
-  };
+  // const handleFetchTasks = () => {
+  //   dispatch(fetchTasks());
+  // };
 
   return (
     <section className="container mx-auto p-4 flex justify-center items-center">
@@ -41,7 +41,7 @@ const Todo = () => {
         </form>
 
         <button
-          onClick={handleFetchTasks}
+          // onClick={handleFetchTasks}
           className="my-5 text-white px-2 py-1 rounded bg-green-400 hover:bg-slate-600 duration-300 active:bg-red-400"
         >
           Fetch Tasks

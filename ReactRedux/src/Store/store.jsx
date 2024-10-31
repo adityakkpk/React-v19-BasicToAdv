@@ -51,17 +51,18 @@ const taskReducer = createSlice({
   initialState,
   reducers: {
     addTask: (state, action) => {
-      return { ...state, task: [...state.task, action.payload] };
+      state.task.push(action.payload);
+      // return { ...state, task: [...state.task, action.payload] };
     },
     deleteTask: (state, action) => {
-      const updatedTask = state.task.filter((currTask, index) => {
+      state.task = state.task.filter((currTask, index) => {
         return index !== action.payload;
       });
-      return { ...state, task: updatedTask };
+      // const updatedTask = state.task.filter((currTask, index) => {
+      //   return index !== action.payload;
+      // });
+      // return { ...state, task: updatedTask };
     },
-    // fetchTasks: (state, action) => {
-    //   return { ...state, task: [...state.task, ...action.payload] };
-    // },
   },
 });
 
@@ -69,37 +70,45 @@ export const { addTask, deleteTask } = taskReducer.actions;
 
 export const store = configureStore({
   reducer: {
-    taskReducer,
+    taskReducer: taskReducer.reducer,
   },
 });
 
-console.log("Initial state", store.getState());
+console.log(store.dispatch(addTask("Buy Mango")));
+console.log(store.getState());
+console.log(store.dispatch(addTask("Buy Apple")));
+console.log(store.getState());
 
-store.dispatch(addTask("Do not talk more to people"));
-store.dispatch(addTask("Do not talk more to relatives"));
-store.dispatch(addTask("Do not talk more to friends"));
 
-console.log("After adding tasks:", store.getState());
 
-store.dispatch(addTask("Be focused on your goal"));
 
-console.log("After adding task 2:", store.getState());
+// console.log("Initial state", store.getState());
 
-store.dispatch(deleteTask(2));
+// store.dispatch(addTask("Do not talk more to people"));
+// store.dispatch(addTask("Do not talk more to relatives"));
+// store.dispatch(addTask("Do not talk more to friends"));
 
-console.log("After Deleting task 1:", store.getState());
+// console.log("After adding tasks:", store.getState());
 
-// To test the thunk middleware
-export const fetchTasks = () => {
-  return async (dispatch) => {
-    try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos?_limit=3"
-      );
-      const data = await response.json();
-      dispatch({ type: FETCH_TASKS, payload: data.map((curr) => curr.title) });
-    } catch (error) {
-      console.error(error);
-    }
-  };
-};
+// store.dispatch(addTask("Be focused on your goal"));
+
+// console.log("After adding task 2:", store.getState());
+
+// store.dispatch(deleteTask(2));
+
+// console.log("After Deleting task 1:", store.getState());
+
+// // To test the thunk middleware
+// export const fetchTasks = () => {
+//   return async (dispatch) => {
+//     try {
+//       const response = await fetch(
+//         "https://jsonplaceholder.typicode.com/todos?_limit=3"
+//       );
+//       const data = await response.json();
+//       dispatch({ type: FETCH_TASKS, payload: data.map((curr) => curr.title) });
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
+// };

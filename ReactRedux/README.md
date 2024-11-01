@@ -168,3 +168,12 @@ Use the `useDispatch` hook to dispatch actions from a React component.
         - The `initial state` of the slice.
         - `Reducers` that defines how the state changes in response to actions.
         - `Action Creators` automatically generated based on reducer name.
+
+## 13: Add and Delete tasks with createSlice in React App
+
+## 14: How to Connect Redux Toolkit with React
+
+* Install the `react-redux` package
+
+* Wrap the App with Provider:
+    - Use the Provider component to pass the Redux store to the entire app.

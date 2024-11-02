@@ -40,15 +40,15 @@ const Todo = () => {
           </button>
         </form>
 
-        <button
-          // onClick={handleFetchTasks}
+        {/* <button
+          onClick={handleFetchTasks}
           className="my-5 text-white px-2 py-1 rounded bg-green-400 hover:bg-slate-600 duration-300 active:bg-red-400"
         >
           Fetch Tasks
-        </button>
+        </button> */}
 
         <ul className="space-y-2 h-72 overflow-y-scroll border border-red-400 p-1 rounded">
-          {tasks.map((taskItem, idx) => {
+          {tasks?.map((taskItem, idx) => {
             return (
               <li
                 key={Math.random()}

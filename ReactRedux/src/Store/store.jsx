@@ -6,9 +6,9 @@ const initialState = {
   task: [],
 };
 
-const ADD_TASK = "task/add";
-const DELETE_TASK = "task/delete";
-const FETCH_TASKS = "task/fetch";
+// const ADD_TASK = "task/add";
+// const DELETE_TASK = "task/delete";
+// const FETCH_TASKS = "task/fetch";
 
 // const taskReducer = (state = initialState, action) => {
 //   switch (action.type) {
@@ -74,10 +74,10 @@ export const store = configureStore({
   },
 });
 
-// console.log(store.dispatch(addTask("Buy Mango")));
-// console.log(store.getState());
-// console.log(store.dispatch(addTask("Buy Apple")));
-// console.log(store.getState());
+console.log(store.dispatch(addTask("Buy Mango")));
+console.log(store.getState());
+console.log(store.dispatch(addTask("Buy Apple")));
+console.log(store.getState());
 
 
 

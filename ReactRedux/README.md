@@ -179,3 +179,5 @@ Use the `useDispatch` hook to dispatch actions from a React component.
     - Use the Provider component to pass the Redux store to the entire app.
 
 ## 15: Showing Data in our React app from RTK
+
+## 16: useDispatch and useSelector hook

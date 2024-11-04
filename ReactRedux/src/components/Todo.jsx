@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTask, deleteTask } from "../Store/store";
+import { addTask, deleteTask } from "../features/task/taskSlice";
 
 const Todo = () => {
   const [task, setTask] = useState("");

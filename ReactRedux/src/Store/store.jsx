@@ -1,10 +1,10 @@
-import { createStore, applyMiddleware } from "redux";
-import { composeWithDevTools } from "@redux-devtools/extension";
-import { thunk } from "redux-thunk";
+// import { createStore, applyMiddleware } from "redux";
+// import { composeWithDevTools } from "@redux-devtools/extension";
+// import { thunk } from "redux-thunk";
 
-const initialState = {
-  task: [],
-};
+// const initialState = {
+//   task: [],
+// };
 
 // const ADD_TASK = "task/add";
 // const DELETE_TASK = "task/delete";
@@ -42,46 +42,6 @@ const initialState = {
 // export const store = createStore(taskReducer, composeWithDevTools( applyMiddleware(thunk)));
 // console.log(store);
 
-// Using Redux Toolkit
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-
-// RTK slice
-const taskReducer = createSlice({
-  name: "task",
-  initialState,
-  reducers: {
-    addTask: (state, action) => {
-      state.task.push(action.payload);
-      // return { ...state, task: [...state.task, action.payload] };
-    },
-    deleteTask: (state, action) => {
-      state.task = state.task.filter((currTask, index) => {
-        return index !== action.payload;
-      });
-      // const updatedTask = state.task.filter((currTask, index) => {
-      //   return index !== action.payload;
-      // });
-      // return { ...state, task: updatedTask };
-    },
-  },
-});
-
-export const { addTask, deleteTask } = taskReducer.actions;
-
-export const store = configureStore({
-  reducer: {
-    taskReducer: taskReducer.reducer,
-  },
-});
-
-console.log(store.dispatch(addTask("Buy Mango")));
-console.log(store.getState());
-console.log(store.dispatch(addTask("Buy Apple")));
-console.log(store.getState());
-
-
-
-
 // console.log("Initial state", store.getState());
 
 // store.dispatch(addTask("Do not talk more to people"));
@@ -112,3 +72,14 @@ console.log(store.getState());
 //     }
 //   };
 // };
+
+
+// Using Redux Toolkit
+import { configureStore } from "@reduxjs/toolkit";
+import taskReducer from "../features/task/taskSlice";
+
+export const store = configureStore({
+  reducer: {
+    taskReducer,
+  },
+});
